@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Our Media</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#faf8f4;
+      overflow-x:hidden;
+      color:#1a1a1a;
+    }
+
+    .heading{
+      font-family:'Playfair Display',serif;
+    }
+
+    .glass{
+      background:rgba(255,255,255,0.12);
+      backdrop-filter:blur(18px);
+      border:1px solid rgba(255,255,255,0.15);
+    }
+
+    .gradient-text{
+      background:linear-gradient(to right,#E14F58,#ff8a65);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .media-card{
+      transition:0.5s;
+      overflow:hidden;
+      position:relative;
+    }
+
+    .media-card img{
+      transition:0.8s;
+    }
+
+    .media-card:hover img{
+      transform:scale(1.08);
+    }
+
+    .media-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 30px 80px rgba(0,0,0,0.12);
+    }
+
+  </style>
+
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Global components script -->
+  <script src="components.js" defer></script></head>
+
+<body>
+<div id="global-header"></div>
+
+
+
+
+
+
+<!-- HERO SECTION -->
+
+<section class="relative min-h-[800px] overflow-hidden">
+
+  <!-- BG -->
+  <img
+    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2000"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <!-- OVERLAY -->
+  <div class="absolute inset-0 bg-black/75"></div>
+
+  <!-- GLOW -->
+  <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-[#E14F58]/20 rounded-full blur-[140px]"></div>
+
+  <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-orange-200/20 rounded-full blur-[140px]"></div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 min-h-[800px] flex items-center">
+
+    <div class="grid lg:grid-cols-2 gap-20 items-center w-full">
+
+
+
+
+      <!-- LEFT -->
+
+      <div>
+
+        <span class="glass text-white px-6 py-3 rounded-full uppercase tracking-[4px] text-sm inline-block">
+          From Farm To Family
+        </span>
+
+        <h1 class="heading text-6xl lg:text-8xl text-white mt-8 leading-tight">
+
+          Our
+          <span class="gradient-text">
+            Media
+          </span>
+
+        </h1>
+
+        <p class="text-white/75 text-lg leading-[2] mt-8 max-w-2xl">
+
+          Celebrating milestones, achievements, exhibitions,
+          media coverage and memorable moments that define our journey of excellence.
+
+        </p>
+
+        <div class="flex flex-wrap gap-5 mt-12">
+
+          <button class="bg-[#E14F58] hover:bg-[#cf3d47] transition-all duration-500 px-10 py-5 rounded-full text-white font-semibold shadow-[0_20px_60px_rgba(225,79,88,0.45)]">
+            Explore Gallery
+          </button>
+
+          <button class="glass hover:bg-white hover:text-black transition-all duration-500 px-10 py-5 rounded-full text-white font-semibold">
+            Watch Videos
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <!-- RIGHT -->
+
+      <div class="relative">
+
+        <!-- GLOW -->
+        <div class="absolute -top-10 -right-10 w-72 h-72 bg-[#E14F58]/30 rounded-full blur-[120px]"></div>
+
+        <!-- IMAGE -->
+        <div class="relative overflow-hidden rounded-[40px] shadow-[0_30px_100px_rgba(0,0,0,0.45)]">
+
+          <img
+            src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1600"
+            class="w-full h-[650px] object-cover"
+          />
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+          <!-- FLOAT CARD -->
+          <div class="absolute bottom-8 left-8 right-8 glass rounded-[30px] p-8">
+
+            <div class="flex items-center justify-between">
+
+              <div>
+
+                <span class="text-[#ff9ea4] uppercase tracking-[4px] text-xs">
+                  Brand Highlights
+                </span>
+
+                <h3 class="heading text-3xl text-white mt-2">
+                  Awards & Media Presence
+                </h3>
+
+              </div>
+
+              <div class="w-20 h-20 rounded-full bg-[#E14F58] flex items-center justify-center text-white text-3xl shadow-2xl">
+                🏆
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- AWARDS SECTION -->
+
+<section class="py-28 relative overflow-hidden bg-[#faf8f4]">
+
+  <!-- SHAPES -->
+  <div class="absolute top-0 left-0 w-96 h-96 bg-[#E14F58]/10 rounded-full blur-[140px]"></div>
+
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-orange-100 rounded-full blur-[140px]"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+
+
+
+
+    <!-- TITLE -->
+
+    <div class="text-center mb-20">
+
+      <span class="text-[#E14F58] uppercase tracking-[5px] text-sm font-semibold">
+        Recognition & Achievements
+      </span>
+
+      <h2 class="heading text-5xl lg:text-6xl mt-6">
+        Awards & Certifications
+      </h2>
+
+      <p class="text-gray-600 text-lg leading-[2] mt-8 max-w-4xl mx-auto">
+
+        Recognized for quality, innovation and commitment towards excellence in dairy products and food industry standards.
+
+      </p>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- GRID -->
+
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
+
+
+
+
+      <!-- CARD -->
+
+      <div class="media-card bg-white rounded-[35px] overflow-hidden shadow-xl border border-gray-100">
+
+        <div class="overflow-hidden">
+
+          <img
+            src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?q=80&w=1200"
+            class="w-full h-[420px] object-cover"
+          />
+
+        </div>
+
+        <div class="p-8">
+
+          <span class="text-[#E14F58] uppercase tracking-[4px] text-xs font-semibold">
+            Appreciation Award
+          </span>
+
+          <h3 class="heading text-3xl mt-4">
+            Excellence Recognition
+          </h3>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!-- CARD -->
+
+      <div class="media-card bg-white rounded-[35px] overflow-hidden shadow-xl border border-gray-100">
+
+        <div class="overflow-hidden">
+
+          <img
+            src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1200"
+            class="w-full h-[420px] object-cover"
+          />
+
+        </div>
+
+        <div class="p-8">
+
+          <span class="text-[#E14F58] uppercase tracking-[4px] text-xs font-semibold">
+            Government Certification
+          </span>
+
+          <h3 class="heading text-3xl mt-4">
+            Quality Approved
+          </h3>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!-- CARD -->
+
+      <div class="media-card bg-white rounded-[35px] overflow-hidden shadow-xl border border-gray-100">
+
+        <div class="overflow-hidden">
+
+          <img
+            src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200"
+            class="w-full h-[420px] object-cover"
+          />
+
+        </div>
+
+        <div class="p-8">
+
+          <span class="text-[#E14F58] uppercase tracking-[4px] text-xs font-semibold">
+            Industry Achievement
+          </span>
+
+          <h3 class="heading text-3xl mt-4">
+            Trusted Brand Award
+          </h3>
+
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- EXHIBITIONS -->
+
+<section class="pb-28 bg-[#faf8f4]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+
+
+
+    <!-- TITLE -->
+
+    <div class="text-center mb-20">
+
+      <span class="text-[#E14F58] uppercase tracking-[5px] text-sm font-semibold">
+        Brand Presence
+      </span>
+
+      <h2 class="heading text-5xl lg:text-6xl mt-6">
+        Exhibitions & Events
+      </h2>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- EVENT CARD -->
+
+    <div class="relative overflow-hidden rounded-[45px] shadow-[0_30px_80px_rgba(0,0,0,0.12)]">
+
+      <img
+        src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2000"
+        class="w-full h-[650px] object-cover"
+      />
+
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+      <div class="absolute bottom-0 left-0 right-0 p-12">
+
+        <span class="bg-[#E14F58] text-white px-5 py-2 rounded-full uppercase tracking-[3px] text-xs">
+          Exhibition 2025
+        </span>
+
+        <h3 class="heading text-5xl text-white mt-6">
+          Aahar 2025
+        </h3>
+
+        <p class="text-white/75 text-lg mt-6 max-w-3xl leading-[2]">
+          Showcasing premium dairy products and connecting with industry leaders at one of India’s biggest food exhibitions.
+        </p>
+
+        <div class="flex items-center gap-4 mt-8 text-white/70">
+
+          <span>📅 03 March, 2025</span>
+
+          <span>•</span>
+
+          <span>📍 New Delhi</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- VIDEOS -->
+
+<section class="pb-28 bg-[#faf8f4]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+
+
+
+    <!-- TITLE -->
+
+    <div class="text-center mb-20">
+
+      <span class="text-[#E14F58] uppercase tracking-[5px] text-sm font-semibold">
+        Event Highlights
+      </span>
+
+      <h2 class="heading text-5xl lg:text-6xl mt-6">
+        Event Videos
+      </h2>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- GRID -->
+
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
+
+
+
+
+      <!-- VIDEO CARD -->
+
+      <div class="media-card bg-white rounded-[35px] overflow-hidden shadow-xl border border-gray-100">
+
+        <div class="relative">
+
+          <img
+            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200"
+            class="w-full h-[320px] object-cover"
+          />
+
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+
+            <div class="w-24 h-24 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white text-4xl">
+              ▶
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="p-8">
+
+          <h3 class="heading text-3xl">
+            India Food Forum 2025
+          </h3>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!-- VIDEO CARD -->
+
+      <div class="media-card bg-white rounded-[35px] overflow-hidden shadow-xl border border-gray-100">
+
+        <div class="relative">
+
+          <img
+            src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200"
+            class="w-full h-[320px] object-cover"
+          />
+
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+
+            <div class="w-24 h-24 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white text-4xl">
+              ▶
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="p-8">
+
+          <h3 class="heading text-3xl">
+            AAFT University 2025
+          </h3>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!-- VIDEO CARD -->
+
+      <div class="media-card bg-white rounded-[35px] overflow-hidden shadow-xl border border-gray-100">
+
+        <div class="relative">
+
+          <img
+            src="https://images.unsplash.com/photo-1515169067868-5387ec356754?q=80&w=1200"
+            class="w-full h-[320px] object-cover"
+          />
+
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+
+            <div class="w-24 h-24 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white text-4xl">
+              ▶
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="p-8">
+
+          <h3 class="heading text-3xl">
+            Galgotia University 2025
+          </h3>
+
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- NEWS -->
+
+<section class="pb-28 bg-[#faf8f4]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+
+
+
+    <!-- TITLE -->
+
+    <div class="text-center mb-20">
+
+      <span class="text-[#E14F58] uppercase tracking-[5px] text-sm font-semibold">
+        Media Coverage
+      </span>
+
+      <h2 class="heading text-5xl lg:text-6xl mt-6">
+        News & Publications
+      </h2>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- NEWS CARD -->
+
+    <div class="bg-white rounded-[45px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.12)] border border-gray-100">
+
+      <div class="grid lg:grid-cols-2 items-center">
+
+        <!-- IMAGE -->
+        <div class="overflow-hidden">
+
+          <img
+            src="https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1400"
+            class="w-full h-[650px] object-cover"
+          />
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="p-14">
+
+          <span class="text-[#E14F58] uppercase tracking-[5px] text-sm font-semibold">
+            Featured Story
+          </span>
+
+          <h3 class="heading text-5xl mt-6 leading-tight">
+            Quality & Ethics In The DNA
+          </h3>
+
+          <p class="text-gray-600 text-lg leading-[2] mt-8">
+
+            Madhusudan continues to strengthen its reputation
+            through quality assurance, ethical business practices
+            and customer trust across India.
+
+          </p>
+
+          <button class="mt-10 bg-[#E14F58] hover:bg-[#cf3d47] transition-all duration-500 px-8 py-4 rounded-full text-white font-semibold shadow-xl">
+            Read Full Story
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- BRAND VIDEO -->
+
+<section class="pb-28 bg-[#faf8f4]">
+
+  <div class="max-w-6xl mx-auto px-6 lg:px-10">
+
+
+
+
+    <!-- TITLE -->
+
+    <div class="text-center mb-20">
+
+      <span class="text-[#E14F58] uppercase tracking-[5px] text-sm font-semibold">
+        Brand Film
+      </span>
+
+      <h2 class="heading text-5xl lg:text-6xl mt-6">
+        Our Story In Motion
+      </h2>
+
+      <p class="text-gray-600 text-lg leading-[2] mt-8 max-w-4xl mx-auto">
+
+        Madhusudan Ghee is crafted with purity and tested for quality.
+        We believe in bringing healthy and authentic taste to every family.
+
+      </p>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- VIDEO -->
+
+    <div class="relative overflow-hidden rounded-[45px] shadow-[0_30px_80px_rgba(0,0,0,0.15)]">
+
+      <img
+        src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2000"
+        class="w-full h-[700px] object-cover"
+      />
+
+      <!-- OVERLAY -->
+      <div class="absolute inset-0 bg-black/45 flex items-center justify-center">
+
+        <div class="w-36 h-36 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white text-6xl shadow-2xl">
+          ▶
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- CTA -->
+
+<section class="pb-28 bg-[#faf8f4]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="relative rounded-[45px] overflow-hidden">
+
+      <!-- BG -->
+      <img
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2000"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <!-- OVERLAY -->
+      <div class="absolute inset-0 bg-black/75"></div>
+
+      <!-- CONTENT -->
+      <div class="relative z-10 text-center py-28 px-8">
+
+        <span class="text-[#E14F58] uppercase tracking-[5px] text-sm">
+          Explore More
+        </span>
+
+        <h2 class="heading text-5xl lg:text-6xl text-white mt-6 leading-tight">
+
+          Discover Our <br>
+          Journey Of Excellence
+
+        </h2>
+
+        <p class="text-white/70 max-w-3xl mx-auto mt-8 text-lg leading-[2]">
+
+          Explore our exhibitions, awards, media stories and memorable milestones
+          that showcase our commitment to quality and trust.
+
+        </p>
+
+        <button class="mt-12 bg-[#E14F58] hover:bg-[#cf3d47] transition-all duration-500 px-10 py-5 rounded-full text-white font-semibold shadow-[0_20px_60px_rgba(225,79,88,0.45)]">
+          View All Media
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+<div id="global-footer"></div>
+</body>
+</html>

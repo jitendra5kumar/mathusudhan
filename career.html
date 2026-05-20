@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Madhusudan Group</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <!-- Remix Icon -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+   <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+    }
+
+    .hero-overlay {
+      background: linear-gradient(to right, rgba(225,79,88,0.94), rgba(225,79,88,0.72));
+    }
+  </style>
+
+  <!-- Global components script -->
+  <script src="components.js" defer></script></head>
+
+<body class="bg-[var(--background-color)] text-[var(--text-default)]">
+
+<!-- ================= NAVBAR ================= -->
+
+<!-- REPLACE YOUR HEADER WITH THIS -->
+
+<div id="global-header"></div>
+
+
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-screen overflow-hidden flex items-center">
+
+    <img
+      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2000&auto=format&fit=crop"
+      alt="Career Banner"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-10 left-10 w-72 h-72 rounded-full bg-white blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-white blur-3xl"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-24 grid lg:grid-cols-2 gap-20 items-center">
+
+      <div>
+
+        <span class="inline-block px-6 py-3 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 text-white uppercase tracking-[4px] text-sm font-semibold mb-8">
+          Careers At Madhusudan
+        </span>
+
+        <h1 class="text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-8">
+          Build Your <br>
+          Future With Us
+        </h1>
+
+        <p class="text-white/90 text-lg leading-9 max-w-2xl mb-10">
+          Join a team driven by innovation, passion, and excellence. At Madhusudan, we believe in creating opportunities that empower people and shape successful careers.
+        </p>
+
+        <div class="flex flex-wrap gap-5">
+
+          <a href="#jobs" class="px-8 py-4 rounded-full bg-white text-[#E14F58] font-semibold shadow-2xl hover:scale-105 duration-300">
+            View Openings
+          </a>
+
+          <a href="#culture" class="px-8 py-4 rounded-full border border-white text-white font-semibold hover:bg-white hover:text-[#E14F58] duration-300">
+            Our Culture
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT CARD -->
+      <div class="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[40px] p-8 shadow-[0_20px_80px_rgba(0,0,0,0.25)]">
+
+        <img
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+          alt="Team"
+          class="w-full h-[450px] object-cover rounded-[30px]"
+        />
+
+        <div class="grid grid-cols-3 gap-4 mt-6">
+
+          <div class="bg-white rounded-3xl p-5 text-center shadow-lg">
+            <h3 class="text-3xl font-extrabold text-[#E14F58]">150+</h3>
+            <p class="text-sm text-gray-500 mt-1">Team Members</p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-5 text-center shadow-lg">
+            <h3 class="text-3xl font-extrabold text-[#E14F58]">25+</h3>
+            <p class="text-sm text-gray-500 mt-1">Years Legacy</p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-5 text-center shadow-lg">
+            <h3 class="text-3xl font-extrabold text-[#E14F58]">10+</h3>
+            <p class="text-sm text-gray-500 mt-1">Departments</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CULTURE SECTION -->
+  <section id="culture" class="py-28 bg-white overflow-hidden relative">
+
+    <div class="absolute top-0 right-0 w-96 h-96 bg-[#E14F58]/10 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10 grid lg:grid-cols-2 gap-20 items-center">
+
+      <div class="relative">
+
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+          class="rounded-[40px] shadow-2xl w-full h-[650px] object-cover"
+          alt="Work Culture"
+        />
+
+        <div class="absolute -bottom-10 -right-10 bg-[#E14F58] text-white rounded-[30px] p-10 shadow-2xl max-w-xs">
+          <h3 class="text-5xl font-extrabold">Grow</h3>
+          <p class="text-lg leading-8 mt-3">
+            Learn, innovate, and grow together with a passionate team.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <span class="text-[#E14F58] uppercase tracking-[4px] font-bold text-sm">
+          Work Culture
+        </span>
+
+        <h2 class="text-4xl lg:text-6xl font-extrabold text-gray-900 mt-6 leading-tight">
+          Inspiring People To Achieve More
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-9 mt-8">
+          Madhusudan is built on strong values, teamwork, innovation, and customer trust. We create an environment where talent is recognized and individuals are encouraged to grow professionally.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-6 mt-12">
+
+          <div class="rounded-3xl border border-gray-100 p-8 shadow-xl hover:-translate-y-2 duration-500">
+
+            <div class="w-16 h-16 rounded-2xl bg-[#E14F58]/10 flex items-center justify-center mb-5 text-[#E14F58] text-3xl">
+              🚀
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Career Growth</h3>
+
+            <p class="text-gray-600 leading-8">
+              Opportunities to develop skills and build long-term careers.
+            </p>
+
+          </div>
+
+
+          <div class="rounded-3xl border border-gray-100 p-8 shadow-xl hover:-translate-y-2 duration-500">
+
+            <div class="w-16 h-16 rounded-2xl bg-[#E14F58]/10 flex items-center justify-center mb-5 text-[#E14F58] text-3xl">
+              🤝
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Team Collaboration</h3>
+
+            <p class="text-gray-600 leading-8">
+              A positive environment driven by teamwork and innovation.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- JOB OPENINGS -->
+  <section id="jobs" class="py-28 bg-gradient-to-b from-[#fff4f5] to-white overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="text-center max-w-4xl mx-auto mb-20">
+
+        <span class="text-[#E14F58] uppercase tracking-[4px] font-bold text-sm">
+          Open Positions
+        </span>
+
+        <h2 class="text-4xl lg:text-6xl font-extrabold text-gray-900 mt-6 leading-tight">
+          Explore Career Opportunities
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-8 mt-6">
+          Find exciting opportunities to work with a growing and innovative dairy brand.
+        </p>
+
+      </div>
+
+
+      <div class="space-y-8">
+
+        <!-- JOB CARD -->
+        <div class="bg-white rounded-[35px] p-10 shadow-xl border border-gray-100 flex flex-col lg:flex-row lg:items-center justify-between gap-10 hover:-translate-y-2 duration-500">
+
+          <div>
+            <span class="inline-block px-5 py-2 rounded-full bg-[#E14F58]/10 text-[#E14F58] font-semibold text-sm mb-5">
+              Full Time
+            </span>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-4">
+              Sales Executive
+            </h3>
+
+            <div class="flex flex-wrap gap-6 text-gray-500 text-lg">
+              <span>📍 Noida</span>
+              <span>💼 Sales Department</span>
+              <span>⏰ 2+ Years Experience</span>
+            </div>
+          </div>
+
+          <button class="h-14 px-10 rounded-full bg-[#E14F58] text-white font-semibold text-lg hover:scale-105 duration-300 shadow-xl">
+            Apply Now
+          </button>
+
+        </div>
+
+
+        <!-- JOB CARD -->
+        <div class="bg-white rounded-[35px] p-10 shadow-xl border border-gray-100 flex flex-col lg:flex-row lg:items-center justify-between gap-10 hover:-translate-y-2 duration-500">
+
+          <div>
+            <span class="inline-block px-5 py-2 rounded-full bg-[#E14F58]/10 text-[#E14F58] font-semibold text-sm mb-5">
+              Full Time
+            </span>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-4">
+              Marketing Manager
+            </h3>
+
+            <div class="flex flex-wrap gap-6 text-gray-500 text-lg">
+              <span>📍 Delhi NCR</span>
+              <span>💼 Marketing Team</span>
+              <span>⏰ 5+ Years Experience</span>
+            </div>
+          </div>
+
+          <button class="h-14 px-10 rounded-full bg-[#E14F58] text-white font-semibold text-lg hover:scale-105 duration-300 shadow-xl">
+            Apply Now
+          </button>
+
+        </div>
+
+
+        <!-- JOB CARD -->
+        <div class="bg-white rounded-[35px] p-10 shadow-xl border border-gray-100 flex flex-col lg:flex-row lg:items-center justify-between gap-10 hover:-translate-y-2 duration-500">
+
+          <div>
+            <span class="inline-block px-5 py-2 rounded-full bg-[#E14F58]/10 text-[#E14F58] font-semibold text-sm mb-5">
+              Full Time
+            </span>
+
+            <h3 class="text-3xl font-bold text-gray-900 mb-4">
+              Quality Assurance Officer
+            </h3>
+
+            <div class="flex flex-wrap gap-6 text-gray-500 text-lg">
+              <span>📍 Uttar Pradesh</span>
+              <span>💼 Production Unit</span>
+              <span>⏰ 3+ Years Experience</span>
+            </div>
+          </div>
+
+          <button class="h-14 px-10 rounded-full bg-[#E14F58] text-white font-semibold text-lg hover:scale-105 duration-300 shadow-xl">
+            Apply Now
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- APPLICATION FORM -->
+  <section class="py-28 bg-white overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-20 items-center">
+
+      <div>
+
+        <span class="text-[#E14F58] uppercase tracking-[4px] font-bold text-sm">
+          Join Our Team
+        </span>
+
+        <h2 class="text-4xl lg:text-6xl font-extrabold text-gray-900 mt-6 leading-tight">
+          Apply For Your Dream Career
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-9 mt-8">
+          We are always looking for passionate and talented individuals who want to make a difference.
+        </p>
+
+        <div class="mt-12 space-y-6">
+
+          <div class="flex items-start gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-[#E14F58] text-white flex items-center justify-center text-2xl">
+              ✓
+            </div>
+
+            <div>
+              <h4 class="text-2xl font-bold text-gray-900">Dynamic Work Environment</h4>
+              <p class="text-gray-600 mt-2 leading-8">
+                Work with skilled professionals in a growth-driven environment.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="flex items-start gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-[#E14F58] text-white flex items-center justify-center text-2xl">
+              ✓
+            </div>
+
+            <div>
+              <h4 class="text-2xl font-bold text-gray-900">Learning Opportunities</h4>
+              <p class="text-gray-600 mt-2 leading-8">
+                Continuous learning and professional development support.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- FORM -->
+      <div class="bg-gradient-to-b from-[#fff5f6] to-white rounded-[40px] p-10 shadow-[0_20px_80px_rgba(0,0,0,0.08)] border border-gray-100">
+
+        <form class="space-y-6">
+
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-3">Full Name</label>
+            <input type="text" placeholder="Enter your name"
+              class="w-full h-14 rounded-2xl border border-gray-200 px-5 outline-none focus:border-[#E14F58] duration-300">
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-5">
+
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-3">Email</label>
+              <input type="email" placeholder="Enter email"
+                class="w-full h-14 rounded-2xl border border-gray-200 px-5 outline-none focus:border-[#E14F58] duration-300">
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-3">Phone</label>
+              <input type="text" placeholder="Enter phone"
+                class="w-full h-14 rounded-2xl border border-gray-200 px-5 outline-none focus:border-[#E14F58] duration-300">
+            </div>
+
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-3">Position Applying For</label>
+            <input type="text" placeholder="Job role"
+              class="w-full h-14 rounded-2xl border border-gray-200 px-5 outline-none focus:border-[#E14F58] duration-300">
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-3">Upload Resume</label>
+            <input type="file"
+              class="w-full border border-dashed border-[#E14F58]/40 rounded-2xl p-5 bg-white">
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-3">Message</label>
+            <textarea rows="5" placeholder="Write your message"
+              class="w-full rounded-2xl border border-gray-200 p-5 outline-none resize-none focus:border-[#E14F58] duration-300"></textarea>
+          </div>
+
+          <button class="w-full h-16 rounded-2xl bg-[#E14F58] text-white text-lg font-semibold hover:scale-[1.02] duration-300 shadow-xl">
+            Submit Application
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<div id="global-footer"></div>
+
+<!-- SCRIPTS -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</body>
+</html>

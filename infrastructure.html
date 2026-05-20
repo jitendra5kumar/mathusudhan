@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Our Infrastructure</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#f8f6f1;
+      overflow-x:hidden;
+      color:#1a1a1a;
+    }
+
+    .heading{
+      font-family:'Playfair Display',serif;
+    }
+
+    .hero-overlay{
+      background:linear-gradient(to right,rgba(0,0,0,0.75),rgba(0,0,0,0.35));
+    }
+
+    .glass{
+      background:rgba(255,255,255,0.12);
+      backdrop-filter:blur(14px);
+      border:1px solid rgba(255,255,255,0.18);
+    }
+
+    .gradient-text{
+      background:linear-gradient(to right,#E14F58,#ff8a65);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .infrastructure-card:hover{
+      transform:translateY(-12px);
+    }
+
+  </style>
+
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Global components script -->
+  <script src="components.js" defer></script></head>
+
+<body>
+<div id="global-header"></div>
+
+
+
+
+
+<!-- HERO SECTION -->
+
+<section class="relative min-h-[850px] overflow-hidden">
+
+  <!-- BG IMAGE -->
+  <img
+    src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=2000"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <!-- OVERLAY -->
+  <div class="absolute inset-0 hero-overlay"></div>
+
+  <!-- DECOR -->
+  <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-[#E14F58]/20 rounded-full blur-[140px]"></div>
+
+  <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-orange-200/20 rounded-full blur-[140px]"></div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 min-h-[850px] flex items-center">
+
+    <div class="grid lg:grid-cols-2 gap-20 items-center w-full">
+
+      <!-- LEFT -->
+
+      <div>
+
+        <span class="glass text-white px-6 py-3 rounded-full uppercase tracking-[4px] text-sm inline-block">
+          From Farm To Family
+        </span>
+
+        <h1 class="heading text-6xl lg:text-8xl text-white mt-8 leading-tight">
+
+          Our
+          <span class="gradient-text">
+            Infrastructure
+          </span>
+
+        </h1>
+
+        <p class="text-white/75 text-lg leading-[2] mt-8 max-w-2xl">
+
+          Building trust through world-class dairy infrastructure,
+          advanced procurement systems and premium processing facilities
+          that ensure purity, freshness and quality in every product.
+
+        </p>
+
+        <div class="flex flex-wrap gap-5 mt-12">
+
+          <button class="bg-[#E14F58] hover:bg-[#cf3d47] transition-all duration-500 px-10 py-5 rounded-full text-white font-semibold shadow-[0_20px_60px_rgba(225,79,88,0.45)]">
+            Explore Infrastructure
+          </button>
+
+          <button class="glass hover:bg-white hover:text-black transition-all duration-500 px-10 py-5 rounded-full text-white font-semibold">
+            Watch Journey
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!-- RIGHT IMAGE -->
+
+      <div class="relative">
+
+        <!-- GLOW -->
+        <div class="absolute -top-10 -right-10 w-72 h-72 bg-[#E14F58]/30 rounded-full blur-[120px]"></div>
+
+        <!-- MAIN CARD -->
+        <div class="relative rounded-[40px] overflow-hidden shadow-[0_30px_100px_rgba(0,0,0,0.45)]">
+
+          <img
+            src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1400"
+            class="w-full h-[650px] object-cover"
+          />
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+
+          <!-- FLOAT CARD -->
+          <div class="absolute bottom-8 left-8 right-8 glass rounded-[30px] p-8">
+
+            <div class="flex items-center justify-between gap-6">
+
+              <div>
+
+                <span class="text-[#ff9ea4] uppercase tracking-[4px] text-xs">
+                  Premium Facility
+                </span>
+
+                <h3 class="heading text-3xl text-white mt-2">
+                  Advanced Dairy Plant
+                </h3>
+
+              </div>
+
+              <div class="w-20 h-20 rounded-full bg-[#E14F58] flex items-center justify-center text-white text-3xl shadow-2xl shrink-0">
+                🏭
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- INTRO SECTION -->
+
+<section class="py-28 relative overflow-hidden bg-[#faf8f4]">
+
+  <!-- SHAPES -->
+  <div class="absolute top-0 left-0 w-96 h-96 bg-[#E14F58]/10 rounded-full blur-[140px]"></div>
+
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-orange-100 rounded-full blur-[140px]"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-10 text-center">
+
+    <span class="text-[#E14F58] uppercase tracking-[5px] text-sm font-semibold">
+      Procurement Process
+    </span>
+
+    <h2 class="heading text-5xl lg:text-6xl mt-6">
+      Smart Milk Procurement
+    </h2>
+
+    <p class="text-gray-600 text-lg leading-[2.2] mt-10 max-w-4xl mx-auto">
+
+      Milk is collected through village collection centres using advanced milk routing systems
+      and transported efficiently to chilling centres.
+      In every village, representatives of milk producers are installed after proper meetings
+      and consent of milk producers to ensure transparency, quality and farmer trust.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- INFRASTRUCTURE SECTION -->
+
+<section class="pb-28 bg-[#faf8f4]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+
+
+      <!-- LEFT IMAGE -->
+
+      <div class="relative">
+
+        <!-- SHADOW -->
+        <div class="absolute inset-0 bg-[#E14F58]/20 blur-[120px] rounded-full"></div>
+
+        <!-- IMAGE -->
+        <div class="relative overflow-hidden rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.15)]">
+
+          <img
+            src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1600"
+            class="w-full h-[650px] object-cover"
+          />
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+
+          <!-- FLOATING INFO -->
+          <div class="absolute bottom-8 left-8 right-8 bg-white rounded-[30px] p-8 shadow-2xl">
+
+            <div class="flex items-center justify-between">
+
+              <div>
+
+                <span class="text-[#E14F58] uppercase tracking-[4px] text-xs font-semibold">
+                  Processing Excellence
+                </span>
+
+                <h3 class="heading text-3xl mt-3">
+                  High-Tech Infrastructure
+                </h3>
+
+              </div>
+
+              <div class="w-16 h-16 rounded-full bg-[#E14F58] flex items-center justify-center text-white text-2xl">
+                ⚙️
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <!-- RIGHT CONTENT -->
+
+      <div class="space-y-8">
+
+
+
+
+        <!-- CARD -->
+
+        <div class="infrastructure-card bg-white rounded-[35px] p-10 shadow-xl border border-gray-100 transition-all duration-500">
+
+          <div class="flex items-start gap-6">
+
+            <div class="w-20 h-20 rounded-[25px] bg-[#E14F58] text-white flex items-center justify-center text-3xl shadow-xl shrink-0">
+              🚛
+            </div>
+
+            <div>
+
+              <h3 class="heading text-3xl mb-4">
+                Efficient Collection Network
+              </h3>
+
+              <p class="text-gray-600 leading-[2]">
+                Advanced routing systems ensure fresh milk reaches chilling centres quickly
+                while maintaining hygiene and quality standards.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+        <!-- CARD -->
+
+        <div class="infrastructure-card bg-white rounded-[35px] p-10 shadow-xl border border-gray-100 transition-all duration-500">
+
+          <div class="flex items-start gap-6">
+
+            <div class="w-20 h-20 rounded-[25px] bg-[#E14F58] text-white flex items-center justify-center text-3xl shadow-xl shrink-0">
+              ❄️
+            </div>
+
+            <div>
+
+              <h3 class="heading text-3xl mb-4">
+                Modern Chilling Facilities
+              </h3>
+
+              <p class="text-gray-600 leading-[2]">
+                State-of-the-art chilling centres preserve freshness and nutritional quality
+                immediately after procurement.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+        <!-- CARD -->
+
+        <div class="infrastructure-card bg-white rounded-[35px] p-10 shadow-xl border border-gray-100 transition-all duration-500">
+
+          <div class="flex items-start gap-6">
+
+            <div class="w-20 h-20 rounded-[25px] bg-[#E14F58] text-white flex items-center justify-center text-3xl shadow-xl shrink-0">
+              🤝
+            </div>
+
+            <div>
+
+              <h3 class="heading text-3xl mb-4">
+                Farmer Partnership
+              </h3>
+
+              <p class="text-gray-600 leading-[2]">
+                Strong village-level coordination and transparent procurement practices
+                help build long-term trust with dairy farmers.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- CTA SECTION -->
+
+<section class="pb-28 bg-[#faf8f4]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="relative rounded-[45px] overflow-hidden">
+
+      <!-- BG -->
+      <img
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2000"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <!-- OVERLAY -->
+      <div class="absolute inset-0 bg-black/75"></div>
+
+      <!-- CONTENT -->
+      <div class="relative z-10 py-28 px-8 text-center">
+
+        <span class="text-[#E14F58] uppercase tracking-[5px] text-sm">
+          Excellence In Every Step
+        </span>
+
+        <h2 class="heading text-5xl lg:text-6xl text-white mt-6 leading-tight">
+
+          Delivering Freshness <br>
+          From Farm To Home
+
+        </h2>
+
+        <p class="text-white/70 max-w-3xl mx-auto mt-8 text-lg leading-[2]">
+
+          Our world-class infrastructure and trusted procurement systems
+          ensure every product delivers unmatched quality and authentic freshness.
+
+        </p>
+
+        <button class="mt-12 bg-[#E14F58] hover:bg-[#cf3d47] transition-all duration-500 px-10 py-5 rounded-full text-white font-semibold shadow-[0_20px_60px_rgba(225,79,88,0.45)]">
+          Explore More
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<div id="global-footer"></div>
+</body>
+</html>

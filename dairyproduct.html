@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Madhusudan Group</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <!-- Remix Icon -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Global components script -->
+  <script src="components.js" defer></script></head>
+
+<body class="bg-[var(--background-color)] text-[var(--text-default)]">
+
+<!-- ================= NAVBAR ================= -->
+
+<!-- REPLACE YOUR HEADER WITH THIS -->
+
+<div id="global-header"></div>
+
+
+
+<!-- ===================== DAIRY PRODUCTS SECTION ===================== -->
+
+<section class="bg-[#faf7f2] py-24 overflow-hidden">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+
+    <div class="text-center mb-20">
+
+      <p class="uppercase tracking-[6px] text-yellow-500 font-semibold">
+        Madhusudan Dairy
+      </p>
+
+      <h2 class="text-5xl lg:text-6xl font-extrabold text-gray-900 mt-5">
+        Premium Dairy Collection
+      </h2>
+
+      <p class="text-gray-600 text-lg mt-6 max-w-3xl mx-auto leading-8">
+        Fresh and healthy dairy products crafted with purity, freshness and
+        authentic taste for every family.
+      </p>
+
+    </div>
+
+    <!-- ================= PRODUCT ROW 1 ================= -->
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center mb-32">
+
+      <!-- Product Images -->
+
+      <div class="relative">
+
+        <div class="swiper milkSwiper rounded-[40px] overflow-hidden shadow-2xl">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=1974&auto=format&fit=crop"
+                class="w-full h-[600px] object-cover"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=1887&auto=format&fit=crop"
+                class="w-full h-[600px] object-cover"
+              />
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Floating Badge -->
+
+        <div class="absolute -bottom-8 -right-8 bg-yellow-400 px-8 py-6 rounded-[30px] shadow-xl">
+
+          <h3 class="text-3xl font-extrabold">
+            100%
+          </h3>
+
+          <p class="font-medium mt-1">
+            Pure & Fresh
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Product Content -->
+
+      <div>
+
+        <p class="uppercase tracking-[5px] text-yellow-500 font-semibold">
+          Madhusudan Fresh Milk
+        </p>
+
+        <h2 class="text-5xl lg:text-6xl font-extrabold mt-5 leading-tight text-gray-900">
+          Farm Fresh Cow Milk
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-9 mt-8">
+          Madhusudan Fresh Milk is collected directly from trusted dairy farms
+          and processed with advanced quality standards to preserve nutrition,
+          freshness and authentic natural taste.
+        </p>
+
+        <!-- Bullet Points -->
+
+        <div class="space-y-6 mt-10">
+
+          <div class="flex items-start gap-5">
+
+            <div class="w-5 h-5 rounded-full bg-yellow-400 mt-2"></div>
+
+            <div>
+              <h4 class="text-xl font-bold">
+                Rich In Calcium
+              </h4>
+
+              <p class="text-gray-600 mt-2 leading-7">
+                Helps maintain strong bones and healthy body growth.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="flex items-start gap-5">
+
+            <div class="w-5 h-5 rounded-full bg-yellow-400 mt-2"></div>
+
+            <div>
+              <h4 class="text-xl font-bold">
+                Natural Freshness
+              </h4>
+
+              <p class="text-gray-600 mt-2 leading-7">
+                Delivered fresh everyday with no harmful preservatives.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="flex items-start gap-5">
+
+            <div class="w-5 h-5 rounded-full bg-yellow-400 mt-2"></div>
+
+            <div>
+              <h4 class="text-xl font-bold">
+                Premium Quality
+              </h4>
+
+              <p class="text-gray-600 mt-2 leading-7">
+                Processed under hygienic conditions for superior purity.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Price + Button -->
+
+        <div class="flex items-center gap-6 mt-12">
+
+          <div>
+
+            <h3 class="text-5xl font-extrabold text-black">
+              ₹99
+            </h3>
+
+            <p class="text-gray-500 mt-2">
+              1 Litre Pack
+            </p>
+
+          </div>
+
+          <button
+            class="bg-black text-white px-10 py-5 rounded-full hover:bg-yellow-400 hover:text-black transition duration-300 font-semibold"
+          >
+            Add To Cart
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ================= PRODUCT ROW 2 ================= -->
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Content -->
+
+      <div class="order-2 lg:order-1">
+
+        <p class="uppercase tracking-[5px] text-yellow-500 font-semibold">
+          Madhusudan Desi Ghee
+        </p>
+
+        <h2 class="text-5xl lg:text-6xl font-extrabold mt-5 leading-tight text-gray-900">
+          Traditional Pure Ghee
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-9 mt-8">
+          Made using traditional methods from premium quality milk,
+          Madhusudan Desi Ghee delivers rich aroma, authentic flavor and
+          healthy nutrition for your family.
+        </p>
+
+        <!-- Bullet -->
+
+        <div class="space-y-6 mt-10">
+
+          <div class="flex items-start gap-5">
+
+            <div class="w-5 h-5 rounded-full bg-yellow-400 mt-2"></div>
+
+            <div>
+              <h4 class="text-xl font-bold">
+                Rich Aroma
+              </h4>
+
+              <p class="text-gray-600 mt-2 leading-7">
+                Traditional preparation gives authentic taste and fragrance.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="flex items-start gap-5">
+
+            <div class="w-5 h-5 rounded-full bg-yellow-400 mt-2"></div>
+
+            <div>
+              <h4 class="text-xl font-bold">
+                Healthy Nutrition
+              </h4>
+
+              <p class="text-gray-600 mt-2 leading-7">
+                Packed with healthy fats and natural nutrients.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="flex items-start gap-5">
+
+            <div class="w-5 h-5 rounded-full bg-yellow-400 mt-2"></div>
+
+            <div>
+              <h4 class="text-xl font-bold">
+                Premium Quality
+              </h4>
+
+              <p class="text-gray-600 mt-2 leading-7">
+                Hygienically packed with high quality dairy standards.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Price -->
+
+        <div class="flex items-center gap-6 mt-12">
+
+          <div>
+
+            <h3 class="text-5xl font-extrabold text-black">
+              ₹599
+            </h3>
+
+            <p class="text-gray-500 mt-2">
+              1 Kg Pack
+            </p>
+
+          </div>
+
+          <button
+            class="bg-black text-white px-10 py-5 rounded-full hover:bg-yellow-400 hover:text-black transition duration-300 font-semibold"
+          >
+            Add To Cart
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Images -->
+
+      <div class="relative order-1 lg:order-2">
+
+        <div class="swiper gheeSwiper rounded-[40px] overflow-hidden shadow-2xl">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1588165171080-c89acfa5ee83?q=80&w=1887&auto=format&fit=crop"
+                class="w-full h-[600px] object-cover"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?q=80&w=1887&auto=format&fit=crop"
+                class="w-full h-[600px] object-cover"
+              />
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Floating Badge -->
+
+        <div class="absolute -top-8 -left-8 bg-black text-white px-8 py-6 rounded-[30px] shadow-xl">
+
+          <h3 class="text-3xl font-extrabold">
+            Organic
+          </h3>
+
+          <p class="font-medium mt-1">
+            Traditional Taste
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<div id="global-footer"></div>
+
+<!-- SCRIPTS -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- ================= SWIPER ================= -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+</html>
