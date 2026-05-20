@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     globalHeader.innerHTML = `
       <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
         <div class="max-w-7xl mx-auto px-6 lg:px-10">
-          <div id="navbarInner" class="mt-5 rounded-full px-8 py-5 flex items-center justify-between bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl transition-all duration-500">
+          <div id="navbarInner" class="mt-5 rounded-full px-8 py-5 flex items-center justify-between bg-white/10 backdrop-blur-xl border border-white/20 shadow-sm transition-all duration-500">
             <!-- LOGO -->
             <div class="flex items-center gap-3">
               <a href="index.html">
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   Dairy Products
                   <i class="ri-arrow-down-s-line"></i>
                 </button>
-                <div class="absolute left-0 top-full hidden group-hover:block min-w-[220px] bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 z-50 py-2">
+                <div class="absolute left-0 top-full hidden group-hover:block min-w-[220px] bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100 z-50 py-2">
                   <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Milk</a>
                   <a href="productDetails.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Desi Ghee</a>
                   <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Dahi</a>
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   Frozen Products
                   <i class="ri-arrow-down-s-line"></i>
                 </button>
-                <div class="absolute left-0 top-full hidden group-hover:block min-w-[240px] bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 z-50 py-2">
+                <div class="absolute left-0 top-full hidden group-hover:block min-w-[240px] bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100 z-50 py-2">
                   <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen Green Peas</a>
                   <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen Mix Vegetable</a>
                   <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen Sweet Corn</a>
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
 
         <!-- MOBILE MENU OVERLAY DRAWER -->
-        <div id="mobileMenu" class="fixed inset-y-0 right-0 w-80 bg-white/95 backdrop-blur-2xl border-l border-gray-100 shadow-2xl z-50 transform translate-x-full transition-transform duration-500 ease-out py-8 px-6 overflow-y-auto lg:hidden">
+        <div id="mobileMenu" class="fixed inset-y-0 right-0 w-80 bg-white/95 backdrop-blur-2xl border-l border-gray-100 shadow-sm z-50 transform translate-x-full transition-transform duration-500 ease-out py-8 px-6 overflow-y-auto lg:hidden">
           <!-- Close Button -->
           <div class="flex items-center justify-between border-b border-gray-100 pb-5 mb-6">
             <img src="./images/logo.png" alt="Logo" class="w-28" />
@@ -251,9 +251,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="page-hero__eyebrow">${hero.eyebrow}</span>
           <h1 class="page-hero__title">${hero.title}</h1>
           <p class="page-hero__subtitle">${hero.subtitle}</p>
-          <div class="page-hero__meta">
-            ${hero.chips.map(chip => `<span class="page-hero__chip">${chip}</span>`).join("")}
-          </div>
         </div>
       </div>
     `;
@@ -457,6 +454,125 @@ document.addEventListener("DOMContentLoaded", () => {
         arrow.classList.toggle("rotate-180");
       }
     });
+  });
+
+  // 7. CONSISTENT PREMIUM ICONS
+  const setIcon = (box, iconClass) => {
+    if (!box) return;
+    box.classList.add("premium-icon-tile");
+    box.innerHTML = `<i class="${iconClass}"></i>`;
+  };
+
+  const getFirstIconBox = (scope) => {
+    if (!scope) return null;
+    return scope.querySelector(".w-20.h-20, .w-16.h-16, .w-14.h-14, .w-12.h-12");
+  };
+
+  const chooseIconForText = (text) => {
+    const value = text.toLowerCase();
+    if (value.includes("office") || value.includes("location") || value.includes("address")) return "ri-map-pin-2-line";
+    if (value.includes("email") || value.includes("mail")) return "ri-mail-send-line";
+    if (value.includes("phone") || value.includes("call")) return "ri-phone-line";
+    if (value.includes("response") || value.includes("support") || value.includes("care")) return "ri-customer-service-2-line";
+    if (value.includes("sales")) return "ri-hand-coin-line";
+    if (value.includes("marketing")) return "ri-megaphone-line";
+    if (value.includes("production") || value.includes("manufacturing") || value.includes("plant")) return "ri-building-4-line";
+    if (value.includes("business") || value.includes("dealer") || value.includes("distributor")) return "ri-briefcase-4-line";
+    if (value.includes("nutrition") || value.includes("healthy") || value.includes("wellness")) return "ri-heart-pulse-line";
+    if (value.includes("recipe") || value.includes("cooking") || value.includes("kitchen") || value.includes("taste")) return "ri-restaurant-2-line";
+    if (value.includes("pure") || value.includes("milk") || value.includes("dairy")) return "ri-goblet-line";
+    if (value.includes("farmer") || value.includes("agri") || value.includes("village")) return "ri-seedling-line";
+    if (value.includes("technology") || value.includes("digital") || value.includes("automation")) return "ri-settings-3-line";
+    if (value.includes("quality") || value.includes("standard") || value.includes("trusted") || value.includes("security")) return "ri-shield-check-line";
+    if (value.includes("retail") || value.includes("store") || value.includes("distribution")) return "ri-store-2-line";
+    if (value.includes("government") || value.includes("certification") || value.includes("fssai") || value.includes("bis")) return "ri-bank-line";
+    if (value.includes("logistics") || value.includes("cold") || value.includes("chain")) return "ri-truck-line";
+    if (value.includes("privacy") || value.includes("data")) return "ri-database-2-line";
+    if (value.includes("trademark") || value.includes("copyright")) return "ri-copyright-line";
+    if (value.includes("registration") || value.includes("password") || value.includes("account")) return "ri-lock-password-line";
+    if (value.includes("disclaimer") || value.includes("warning")) return "ri-error-warning-line";
+    if (value.includes("sharing") || value.includes("partner")) return "ri-team-line";
+    if (value.includes("fresh")) return "ri-snowflake-line";
+    if (value.includes("family") || value.includes("home")) return "ri-home-heart-line";
+    return "ri-apps-2-line";
+  };
+
+  document.querySelectorAll("#contact-section .grid > .group").forEach((card) => {
+    const title = card.querySelector("h3")?.textContent || "";
+    setIcon(getFirstIconBox(card), chooseIconForText(title));
+    card.classList.add("premium-ui-card");
+  });
+
+  document.querySelectorAll("section form, #location .overflow-hidden").forEach((item) => {
+    item.classList.add("premium-ui-card");
+  });
+
+  document.querySelectorAll(".mt-10.space-y-6 > .flex").forEach((row) => {
+    const title = row.querySelector("h4")?.textContent || "";
+    setIcon(row.querySelector(".w-14.h-14"), chooseIconForText(title));
+  });
+
+  const policyIcons = {
+    "trademarks": "ri-copyright-line",
+    "registration": "ri-lock-password-line",
+    "disclaimer": "ri-error-warning-line",
+    "collecting": "ri-database-2-line",
+    "sharing": "ri-team-line"
+  };
+
+  document.querySelectorAll(".policy-card").forEach((card) => {
+    const heading = card.querySelector("h3")?.textContent.toLowerCase() || "";
+    const iconKey = Object.keys(policyIcons).find((key) => heading.includes(key));
+    if (iconKey) {
+      setIcon(getFirstIconBox(card), policyIcons[iconKey]);
+    }
+    card.classList.add("premium-ui-card");
+  });
+
+  document.querySelectorAll(".policy-card span").forEach((span) => {
+    if (span.textContent.trim().length <= 4 && /[^\w\s]/.test(span.textContent)) {
+      span.innerHTML = '<i class="ri-check-line"></i>';
+      span.classList.add("text-white", "text-xl", "mt-1");
+    }
+  });
+
+  const blogCategoryIcons = {
+    "nutrition": "ri-heart-pulse-line",
+    "recipes": "ri-restaurant-2-line",
+    "lifestyle": "ri-leaf-line",
+    "quality": "ri-shield-check-line",
+    "freshness": "ri-sparkling-2-line",
+    "family": "ri-home-heart-line"
+  };
+
+  document.querySelectorAll("#blogs .group").forEach((card) => {
+    card.classList.add("premium-ui-card");
+    const badge = card.querySelector("span");
+    if (badge) {
+      const label = badge.textContent.trim().toLowerCase();
+      const icon = blogCategoryIcons[label] || "ri-article-line";
+      badge.classList.add("premium-badge");
+      if (!badge.querySelector("i")) {
+        badge.innerHTML = `<i class="${icon}"></i><span>${badge.textContent.trim()}</span>`;
+      }
+    }
+    const link = card.querySelector("a");
+    if (link) {
+      link.className = "premium-read-link";
+      link.innerHTML = 'Read More <i class="ri-arrow-right-line"></i>';
+    }
+  });
+
+  document.querySelectorAll(".w-20.h-20, .w-16.h-16, .w-14.h-14, .w-12.h-12").forEach((box) => {
+    const text = box.textContent.trim();
+    if (!box.querySelector("i") && /[^\x00-\x7F]/.test(text)) {
+      const contextText = box.closest(".group, .policy-card, .partner-card, .leader-card, [class*='rounded'], section")?.textContent || "";
+      setIcon(box, chooseIconForText(contextText));
+    }
+  });
+
+  document.querySelectorAll("section:not(.page-hero) .bg-white.border, section:not(.page-hero) article, section:not(.page-hero) form").forEach((card) => {
+    card.classList.add("premium-ui-card");
   });
 
   // 7. PREMIUM PAGE MOTION
