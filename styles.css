@@ -361,7 +361,7 @@ body:not(.home-page) main > section {
 }
 
 body:not(.home-page) > section:nth-of-type(even) {
-  background: var(--section-warm);
+  /* background: var(--section-warm); */
 }
 
 body:not(.home-page) > section:not(.page-hero) {
