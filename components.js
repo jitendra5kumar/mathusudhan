@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (globalHeader) {
     globalHeader.innerHTML = `
       <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
-        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-7xl mx-auto px-5 lg:px-0">
           <div id="navbarInner" class="mt-5 rounded-full px-6 lg:px-8 py-4 lg:py-5 flex items-center justify-between bg-white/10 backdrop-blur-xl border border-white/20 transition-all duration-500">
             <!-- LOGO -->
             <div class="flex items-center gap-3">
@@ -60,10 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 </button>
                 <div class="nav-dropdown-panel absolute left-0 top-full hidden min-w-[240px] bg-white/98 backdrop-blur-xl rounded-2xl overflow-hidden border border-gray-100/80 z-50 py-2 mt-2">
                   <a href="companyOverview.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Company Overview</a>
-                  <a href="aboutUs.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Leadership</a>
+                  <a href="leadership.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Leadership</a>
                   <a href="client.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Clients</a>
-                  <a href="aboutUs.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">CSR</a>
-                  <a href="legacy.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Milestone</a>
+                  <a href="csr.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">CSR</a>
+                  <a href="milestone.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Milestone</a>
+                  <a href="journey.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Our Journey</a>
                 </div>
               </div>
               <a href="recipes.html" data-page="recipes.html" class="nav-link text-white hover:text-primary pb-1 border-b-2 border-transparent hover:border-primary">Recipes</a>
@@ -140,10 +141,11 @@ document.addEventListener("DOMContentLoaded", () => {
               </button>
               <div class="mobile-dropdown-content hidden pl-4 mt-2 space-y-3 text-base font-medium text-gray-600 border-l border-red-100 ml-1">
                 <a href="companyOverview.html" class="block py-1 hover:text-primary">Company Overview</a>
-                <a href="aboutUs.html" class="block py-1 hover:text-primary">Leadership</a>
+                <a href="leadership.html" class="block py-1 hover:text-primary">Leadership</a>
                 <a href="client.html" class="block py-1 hover:text-primary">Clients</a>
-                <a href="aboutUs.html" class="block py-1 hover:text-primary">CSR</a>
-                <a href="legacy.html" class="block py-1 hover:text-primary">Milestone</a>
+                <a href="csr.html" class="block py-1 hover:text-primary">CSR</a>
+                <a href="milestone.html" class="block py-1 hover:text-primary">Milestone</a>
+                <a href="journey.html" class="block py-1 hover:text-primary">Our Journey</a>
               </div>
             </div>
 
@@ -277,7 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (globalFooter) {
     globalFooter.innerHTML = `
       <footer class="premium-footer bg-primary-color text-white pt-24 pb-12 relative z-10">
-        <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+        <div class="max-w-7xl mx-auto px-5 lg:px-0 relative z-10">
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-14 lg:gap-16 border-b border-white/10 pb-16">
             <div class="space-y-6 lg:col-span-1">
               <a href="index.html">
@@ -292,8 +294,13 @@ document.addEventListener("DOMContentLoaded", () => {
               <h4 class="text-xl font-bold mb-6 pb-3">Company</h4>
               <ul class="space-y-3.5 text-white/55 text-[0.95rem] font-medium">
                 <li><a href="aboutUs.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">About Us</a></li>
+                <li><a href="leadership.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Leadership</a></li>
+                <li><a href="csr.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">CSR</a></li>
+                <li><a href="milestone.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Milestone</a></li>
+                <li><a href="journey.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Journey</a></li>
                 <li><a href="legacy.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Legacy</a></li>
                 <li><a href="infrastructure.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Infrastructure</a></li>
+                <li><a href="plants.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Plants</a></li>
                 <li><a href="media.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Media & Events</a></li>
               </ul>
             </div>
@@ -303,7 +310,10 @@ document.addEventListener("DOMContentLoaded", () => {
               <ul class="space-y-3.5 text-white/55 text-[0.95rem] font-medium">
                 <li><a href="career.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Careers</a></li>
                 <li><a href="client.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Clients</a></li>
+                <li><a href="testimonials.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Testimonials</a></li>
+                <li><a href="exhibitions.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Exhibitions</a></li>
                 <li><a href="recipes.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Recipes</a></li>
+                <li><a href="termsCondition.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Terms & Conditions</a></li>
                 <li><a href="privacyPolicy.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Privacy Policy</a></li>
               </ul>
             </div>
@@ -576,17 +586,6 @@ document.addEventListener("DOMContentLoaded", () => {
     revealItems.forEach(item => revealObserver.observe(item));
   } else {
     revealItems.forEach(item => item.classList.add("is-visible"));
-  }
-
-
-
-  if (window.AOS) {
-    AOS.init({
-      duration: 850,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 80
-    });
   }
 
   if (window.Swiper && document.querySelector(".milkSwiper")) {
