@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -30,7 +30,8 @@
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Global components script -->
-  <script src="components.js" defer></script></head>
+  <script src="components.js" defer></script>
+</head>
 
 <body class="bg-[var(--background-color)] text-[var(--text-default)]">
 
@@ -42,161 +43,21 @@
 
 
 <!-- ================= HERO SECTION ================= -->
-
-<section
-  class="relative min-h-screen overflow-hidden bg-cover bg-center"
-  style="background-image:url('https://images.unsplash.com/photo-1626200419199-391ae4be7a41?q=80&w=2000&auto=format&fit=crop');"
->
-
-  <!-- OVERLAY -->
-
-  <div class="absolute inset-0 bg-black/60"></div>
-
-  <!-- BLUR EFFECT -->
-
-  <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-[#E14F58]/20 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#E14F58]/20 rounded-full blur-3xl"></div>
-
-  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 min-h-screen flex items-center pt-32 pb-20">
-
-    <div class="grid lg:grid-cols-2 gap-16 items-center w-full">
-
-      <!-- LEFT CONTENT -->
-
-      <div>
-
-        <span
-          class="inline-flex items-center gap-2 px-5 py-2 rounded-full
-          bg-white/10 backdrop-blur-xl border border-white/20
-          text-[#ffb7bc] font-semibold text-sm tracking-wide"
-          data-aos="fade-up"
-        >
-          â— Premium Quality Desi Ghee
-        </span>
-
-        <h1
-          class="mt-8 text-5xl md:text-7xl font-black leading-tight text-white"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          Desi Ghee
-          <span class="block text-[#E14F58] mt-2">
-            Poly Pack
-          </span>
-        </h1>
-
-        <p
-          class="mt-8 text-lg leading-9 text-white/80 max-w-2xl"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          Desi ghee is as pure as the tradition it represents.
-          Made from the milk of the finest breeds reared on a natural diet,
-          Madhusudan Desi Ghee embodies the true essence of purity and nourishment.
-        </p>
-
-        <div
-          class="flex flex-wrap gap-5 mt-10"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-
-          <button
-            class="bg-[#E14F58] hover:bg-[#cb3f48]
-            text-white px-9 py-4 rounded-2xl font-bold
-            shadow-[0_15px_40px_rgba(225,79,88,0.35)]
-            transition duration-300 hover:scale-105"
-          >
-            Buy Now
-          </button>
-
-          <button
-            class="bg-white/10 backdrop-blur-xl border border-white/20
-            text-white px-9 py-4 rounded-2xl font-bold
-            hover:bg-white hover:text-black transition duration-300"
-          >
-            Explore More
-          </button>
-
-        </div>
-
-        <!-- STATS -->
-
-        <div class="grid grid-cols-3 gap-5 mt-14">
-
-          <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-6 border border-white/10">
-            <h3 class="text-4xl font-black text-[#E14F58]">450ml</h3>
-            <p class="mt-2 text-white/70">Available Pack</p>
-          </div>
-
-          <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-6 border border-white/10">
-            <h3 class="text-4xl font-black text-[#E14F58]">900ml</h3>
-            <p class="mt-2 text-white/70">Premium Size</p>
-          </div>
-
-          <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-6 border border-white/10">
-            <h3 class="text-4xl font-black text-[#E14F58]">9M</h3>
-            <p class="mt-2 text-white/70">Shelf Life</p>
-          </div>
-
-        </div>
-
+<section class="page-hero" style="--hero-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=1800&auto=format&fit=crop')">
+  <div class="page-hero__content">
+    <div data-reveal>
+      <span class="page-hero__eyebrow">Product Detail</span>
+      <span class="page-hero__divider" aria-hidden="true"></span>
+      <h1 class="page-hero__title">Authentic Dairy Richness For Elevated Cooking</h1>
+      <p class="page-hero__subtitle">A closer look at premium Madhusudan products, their purity, usage, nutrition, and culinary versatility.</p>
+      <div class="page-hero__meta">
+        <span class="page-hero__chip">Pure Taste</span>
+        <span class="page-hero__chip">Rich Aroma</span>
+        <span class="page-hero__chip">Trusted Source</span>
       </div>
-
-      <!-- RIGHT IMAGE -->
-
-      <div
-        class="relative flex justify-center"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      >
-
-        <div class="relative">
-
-          <div class="absolute inset-0 bg-[#E14F58]/20 blur-3xl rounded-full"></div>
-
-          <img
-            src="https://images.unsplash.com/photo-1589985273344-2d1e8e4d6e0b?q=80&w=1200&auto=format&fit=crop"
-            alt="Desi Ghee"
-            class="relative w-full max-w-lg rounded-[40px]
-            shadow-[0_25px_80px_rgba(0,0,0,0.45)]
-            border border-white/10"
-          />
-
-          <!-- FLOATING CARD -->
-
-          <div
-            class="absolute -bottom-6 -left-6
-            bg-white rounded-3xl shadow-sm
-            border border-[#ffd6d9] px-6 py-5"
-          >
-            <p class="text-sm text-gray-500">Best Before</p>
-            <h3 class="text-2xl font-black text-[#E14F58] mt-1">
-              9 Months
-            </h3>
-          </div>
-
-          <div
-            class="absolute -top-6 -right-6
-            bg-[#E14F58] text-white rounded-3xl
-            shadow-sm px-7 py-5"
-          >
-            <p class="text-sm opacity-90">Trusted Quality</p>
-            <h3 class="text-2xl font-black mt-1">
-              100% Pure
-            </h3>
-          </div>
-
-        </div>
-
-      </div>
-
     </div>
-
   </div>
-
 </section>
-
 
   <!-- PRODUCT DESCRIPTION -->
   <section class="py-28 bg-white">
@@ -225,7 +86,7 @@
         </p>
 
         <p class="mt-6 text-lg text-gray-600 leading-9">
-          A cherished part of every household, Madhusudan Desi Ghee is known for its rich taste, tempting aroma, and perfect granulation â€” offering essential nutrients in their purest form.
+          A cherished part of every household, Madhusudan Desi Ghee is known for its rich taste, tempting aroma, and perfect granulation — offering essential nutrients in their purest form.
         </p>
 
         <div class="grid sm:grid-cols-2 gap-6 mt-12">
@@ -269,7 +130,7 @@
     <div class="text-center max-w-3xl mx-auto mb-24">
 
       <span class="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-lg border border-[#ffdadd] text-[#E14F58] font-bold tracking-[3px] text-sm">
-        â— PREMIUM NUTRITION
+        ● PREMIUM NUTRITION
       </span>
 
       <h2 class="mt-8 text-5xl lg:text-7xl font-black leading-tight text-gray-900">
@@ -512,7 +373,7 @@
                   flex items-center justify-center
                   text-4xl font-black shadow-sm"
                 >
-                  âœ“
+                  ✓
                 </div>
 
               </div>
@@ -580,4 +441,5 @@
 
 </body>
 </html>
+
 

@@ -7,48 +7,19 @@
   <title>Privacy Policy</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-
-    body{
-      font-family:'Inter',sans-serif;
-      background:#faf8f4;
-      overflow-x:hidden;
-      color:#222;
-    }
-
-    .heading{
-      font-family:'Playfair Display',serif;
-    }
-
-    .glass{
-      background:rgba(255,255,255,0.1);
-      backdrop-filter:blur(16px);
-      border:1px solid rgba(255,255,255,0.15);
-    }
-
-    .gradient-text{
-      background:linear-gradient(to right,#E14F58,#ff8a65);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
-
-    .policy-card:hover{
-      transform:translateY(-8px);
-    }
-
-  </style>
-
-
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Remix Icon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- Remix Icon -->
   <link rel="stylesheet" href="styles.css" />
   <!-- Global components script -->
   <script src="components.js" defer></script></head>
 
-<body>
+<body class="bg-[var(--background-color)] text-[var(--text-default)]">
 <div id="global-header"></div>
 
 
@@ -56,65 +27,23 @@
 
 <!-- HERO -->
 
-<section class="relative min-h-[700px] overflow-hidden">
-
-  <!-- BG IMAGE -->
-  <img
-    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2000"
-    class="absolute inset-0 w-full h-full object-cover"
-  />
-
-  <!-- OVERLAY -->
-  <div class="absolute inset-0 bg-black/70"></div>
-
-  <!-- GLOW -->
-  <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-[#E14F58]/20 rounded-full blur-[140px]"></div>
-
-  <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-orange-200/20 rounded-full blur-[140px]"></div>
-
-  <!-- CONTENT -->
-  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 min-h-[700px] flex items-center">
-
-    <div class="max-w-4xl">
-
-      <span class="glass text-white px-6 py-3 rounded-full uppercase tracking-[4px] text-sm inline-block">
-        Legal Information
-      </span>
-
-      <h1 class="heading text-6xl lg:text-8xl text-white mt-8 leading-tight">
-
-        Privacy
-        <span class="gradient-text">
-          Policy
-        </span>
-
-      </h1>
-
-      <p class="text-white/75 text-lg leading-[2] mt-8 max-w-3xl">
-
-        Your privacy, trust and data protection are important to us.
-        Learn how Creamy Foods Private Limited collects, protects and uses your information responsibly.
-
-      </p>
-
-      <div class="flex flex-wrap gap-5 mt-12">
-
-        <button class="bg-[#E14F58] hover:bg-[#cf3d47] transition-all duration-500 px-10 py-5 rounded-full text-white font-semibold shadow-[0_20px_60px_rgba(225,79,88,0.45)]">
-          Read Policy
-        </button>
-
-        <button class="glass hover:bg-white hover:text-black transition-all duration-500 px-10 py-5 rounded-full text-white font-semibold">
-          Contact Support
-        </button>
-
+<section class="page-hero" style="--hero-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1800&auto=format&fit=crop')">
+  <div class="page-hero__content">
+    <div data-reveal>
+      <span class="page-hero__eyebrow">Privacy Policy</span>
+      <span class="page-hero__divider" aria-hidden="true"></span>
+      <h1 class="page-hero__title">Clear, Responsible & Transparent Data Practices</h1>
+      <p class="page-hero__subtitle">Understand how Madhusudan handles information with care, responsibility, and respect for your privacy.</p>
+      <div class="page-hero__meta">
+        <span class="page-hero__chip">Transparency</span>
+        <span class="page-hero__chip">Security</span>
+        <span class="page-hero__chip">Trust</span>
       </div>
-
     </div>
-
   </div>
-
 </section>
 
+<!-- INTRO -->
 
 
 
@@ -590,6 +519,10 @@
 
 
 <div id="global-footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </body>
 </html>
 

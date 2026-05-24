@@ -43,75 +43,21 @@
 
 
   <!-- HERO BANNER -->
-  <section class="relative min-h-[70vh] flex items-center overflow-hidden bg-gradient-to-r from-[#E14F58] via-[#ef6b74] to-[#f48d95]">
-
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-10 left-10 w-72 h-72 rounded-full bg-white blur-3xl"></div>
-      <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-white blur-3xl"></div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
-
-      <div>
-        <span class="inline-block px-5 py-2 rounded-full bg-white/20 border border-white/30 text-white tracking-[3px] uppercase text-sm font-semibold mb-6">
-          Contact Madhusudan
-        </span>
-
-        <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight text-white mb-8">
-          Letâ€™s Connect <br>
-          With Purity
-        </h1>
-
-        <p class="text-white/90 text-lg leading-8 max-w-xl mb-10">
-          We believe every conversation matters. Whether you have a product inquiry, dealership request, customer feedback, or simply want to know more about Madhusudan dairy products â€” our team is here to help.
-        </p>
-
-        <div class="flex flex-wrap gap-5">
-          <a href="#contact-section" class="px-8 py-4 rounded-full bg-white text-[#E14F58] font-semibold shadow-sm hover:scale-105 duration-300">
-            Contact Now
-          </a>
-
-          <a href="#location" class="px-8 py-4 rounded-full border border-white text-white font-semibold hover:bg-white hover:text-[#E14F58] duration-300">
-            View Location
-          </a>
-        </div>
-      </div>
-
-      <div class="relative">
-
-        <div class="absolute -top-8 -left-8 w-40 h-40 rounded-full border border-white/30"></div>
-        <div class="absolute -bottom-10 -right-10 w-52 h-52 rounded-full border border-white/20"></div>
-
-        <div class="glass-card rounded-[40px] p-8 shadow-[0_20px_80px_rgba(0,0,0,0.15)] border border-white/30">
-
-          <img
-            src="https://images.unsplash.com/photo-1563630423918-b58f07336ac9?q=80&w=1200&auto=format&fit=crop"
-            class="rounded-[30px] w-full h-[500px] object-cover"
-            alt="Dairy Banner"
-          />
-
-          <div class="grid grid-cols-3 gap-4 mt-5">
-            <div class="bg-white rounded-2xl p-4 text-center shadow-sm">
-              <h3 class="text-2xl font-bold text-[#E14F58]">100%</h3>
-              <p class="text-sm text-gray-500 mt-1">Pure Dairy</p>
-            </div>
-
-            <div class="bg-white rounded-2xl p-4 text-center shadow-sm">
-              <h3 class="text-2xl font-bold text-[#E14F58]">Fresh</h3>
-              <p class="text-sm text-gray-500 mt-1">Every Day</p>
-            </div>
-
-            <div class="bg-white rounded-2xl p-4 text-center shadow-sm">
-              <h3 class="text-2xl font-bold text-[#E14F58]">Trusted</h3>
-              <p class="text-sm text-gray-500 mt-1">By Families</p>
-            </div>
-          </div>
-
+  <section class="page-hero" style="--hero-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1800&auto=format&fit=crop')">
+    <div class="page-hero__content">
+      <div data-reveal>
+        <span class="page-hero__eyebrow">Contact / Support</span>
+        <span class="page-hero__divider" aria-hidden="true"></span>
+        <h1 class="page-hero__title">Start A Conversation With Madhusudan</h1>
+        <p class="page-hero__subtitle">Connect with our team for business enquiries, distribution, product support, partnerships, and customer care.</p>
+        <div class="page-hero__meta">
+          <span class="page-hero__chip">Business Enquiries</span>
+          <span class="page-hero__chip">Support</span>
+          <span class="page-hero__chip">Partnerships</span>
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- CONTACT INFO SECTION -->
   <section id="contact-section" class="py-28 bg-white relative overflow-hidden">
@@ -249,43 +195,45 @@
 
 
       <!-- FORM -->
-      <div class="bg-white rounded-[40px] p-10 shadow-[0_20px_80px_rgba(0,0,0,0.08)] border border-gray-100">
+      <div class="bg-white rounded-[40px] p-10 shadow-[0_20px_80px_rgba(0,0,0,0.08)] border border-gray-100 no-premium">
 
-        <form class="space-y-6">
+        <form id="contactForm" class="space-y-6" action="#" method="post" novalidate>
 
           <div>
-            <label class="text-sm font-semibold text-gray-700 block mb-3">Full Name</label>
-            <input type="text" placeholder="Enter your full name"
-              class="w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-[#E14F58] outline-none duration-300">
+            <label for="fullName" class="text-sm font-semibold text-gray-700 block mb-3">Full Name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" required aria-required="true"
+              class="form-input w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-[#E14F58] outline-none duration-300">
           </div>
 
           <div class="grid md:grid-cols-2 gap-5">
             <div>
-              <label class="text-sm font-semibold text-gray-700 block mb-3">Email Address</label>
-              <input type="email" placeholder="Enter email"
-                class="w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-[#E14F58] outline-none duration-300">
+              <label for="email" class="text-sm font-semibold text-gray-700 block mb-3">Email Address</label>
+              <input id="email" name="email" type="email" placeholder="Enter email" required aria-required="true"
+                class="form-input w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-[#E14F58] outline-none duration-300">
             </div>
 
             <div>
-              <label class="text-sm font-semibold text-gray-700 block mb-3">Phone Number</label>
-              <input type="text" placeholder="Enter phone"
-                class="w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-[#E14F58] outline-none duration-300">
+              <label for="phone" class="text-sm font-semibold text-gray-700 block mb-3">Phone Number</label>
+              <input id="phone" name="phone" type="tel" placeholder="Enter phone"
+                class="form-input w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-[#E14F58] outline-none duration-300">
             </div>
           </div>
 
           <div>
-            <label class="text-sm font-semibold text-gray-700 block mb-3">Subject</label>
-            <input type="text" placeholder="Enter subject"
-              class="w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-[#E14F58] outline-none duration-300">
+            <label for="subject" class="text-sm font-semibold text-gray-700 block mb-3">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Enter subject"
+              class="form-input w-full h-14 px-5 rounded-2xl border border-gray-200 focus:border-[#E14F58] outline-none duration-300">
           </div>
 
           <div>
-            <label class="text-sm font-semibold text-gray-700 block mb-3">Message</label>
-            <textarea rows="6" placeholder="Write your message"
-              class="w-full px-5 py-4 rounded-2xl border border-gray-200 focus:border-[#E14F58] outline-none duration-300 resize-none"></textarea>
+            <label for="message" class="text-sm font-semibold text-gray-700 block mb-3">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message" required aria-required="true"
+              class="form-textarea w-full px-5 py-4 rounded-2xl border border-gray-200 focus:border-[#E14F58] outline-none duration-300 resize-none"></textarea>
           </div>
 
-          <button class="w-full h-14 rounded-2xl bg-[#E14F58] text-white font-semibold text-lg hover:scale-[1.02] duration-300 shadow-sm">
+          <div id="formStatus" class="hidden text-sm text-green-600 font-medium">Message sent. Thank you!</div>
+
+          <button id="contactBtn" type="submit" class="w-full h-14 rounded-2xl bg-[#E14F58] text-white font-semibold text-lg hover:scale-[1.02] duration-300 shadow-sm">
             Send Message
           </button>
         </form>
@@ -332,6 +280,23 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('contactForm');
+  var status = document.getElementById('formStatus');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    status.classList.remove('hidden');
+    form.reset();
+    setTimeout(function () { status.classList.add('hidden'); }, 4500);
+  });
+});
+</script>
 
 
 </body>

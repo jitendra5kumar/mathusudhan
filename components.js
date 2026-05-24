@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     globalHeader.innerHTML = `
       <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
         <div class="max-w-7xl mx-auto px-6 lg:px-10">
-          <div id="navbarInner" class="mt-5 rounded-full px-8 py-5 flex items-center justify-between bg-white/10 backdrop-blur-xl border border-white/20 shadow-sm transition-all duration-500">
+          <div id="navbarInner" class="mt-5 rounded-full px-6 lg:px-8 py-4 lg:py-5 flex items-center justify-between bg-white/10 backdrop-blur-xl border border-white/20 transition-all duration-500">
             <!-- LOGO -->
             <div class="flex items-center gap-3">
               <a href="index.html">
@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
                   Dairy Products
                   <i class="ri-arrow-down-s-line"></i>
                 </button>
-                <div class="absolute left-0 top-full hidden group-hover:block min-w-[220px] bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100 z-50 py-2">
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Milk</a>
-                  <a href="productDetails.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Desi Ghee</a>
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Dahi</a>
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Paneer</a>
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Butter</a>
+                <div class="nav-dropdown-panel absolute left-0 top-full hidden min-w-[240px] bg-white/98 backdrop-blur-xl rounded-2xl overflow-hidden border border-gray-100/80 z-50 py-2 mt-2">
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Milk</a>
+                  <a href="productDetails.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Desi Ghee</a>
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Dahi</a>
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Paneer</a>
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Butter</a>
                 </div>
               </div>
 
@@ -40,28 +40,41 @@ document.addEventListener("DOMContentLoaded", () => {
                   Frozen Products
                   <i class="ri-arrow-down-s-line"></i>
                 </button>
-                <div class="absolute left-0 top-full hidden group-hover:block min-w-[240px] bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100 z-50 py-2">
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen Green Peas</a>
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen Mix Vegetable</a>
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen Sweet Corn</a>
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen Baby Corn</a>
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen French Fries</a>
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen Jackfruit</a>
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen Matar Paneer</a>
-                  <a href="dairyproduct.html" class="block px-6 py-3 text-gray-800 hover:bg-red-50 hover:text-primary transition font-medium">Frozen Soya Chaap</a>
+                <div class="nav-dropdown-panel absolute left-0 top-full hidden min-w-[260px] bg-white/98 backdrop-blur-xl rounded-2xl overflow-hidden border border-gray-100/80 z-50 py-2 mt-2 max-h-[70vh] overflow-y-auto">
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Frozen Green Peas</a>
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Frozen Mix Vegetable</a>
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Frozen Sweet Corn</a>
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Frozen Baby Corn</a>
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Frozen French Fries</a>
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Frozen Jackfruit</a>
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Frozen Matar Paneer</a>
+                  <a href="dairyproduct.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Frozen Soya Chaap</a>
                 </div>
               </div>
 
-              <a href="aboutUs.html" data-page="aboutUs.html" class="nav-link text-white hover:text-primary pb-1 border-b-2 border-transparent hover:border-primary">About Us</a>
+              <!-- About Us Dropdown -->
+              <div class="group relative inline-flex">
+                <button type="button" class="nav-link text-white hover:text-primary inline-flex items-center gap-1 pb-1 border-b-2 border-transparent hover:border-primary">
+                  About Us
+                  <i class="ri-arrow-down-s-line"></i>
+                </button>
+                <div class="nav-dropdown-panel absolute left-0 top-full hidden min-w-[240px] bg-white/98 backdrop-blur-xl rounded-2xl overflow-hidden border border-gray-100/80 z-50 py-2 mt-2">
+                  <a href="companyOverview.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Company Overview</a>
+                  <a href="aboutUs.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Leadership</a>
+                  <a href="client.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Clients</a>
+                  <a href="aboutUs.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">CSR</a>
+                  <a href="legacy.html" class="block pl-8 pr-6 py-3 text-gray-700 hover:bg-red-50/80 hover:text-primary transition font-medium">Milestone</a>
+                </div>
+              </div>
               <a href="recipes.html" data-page="recipes.html" class="nav-link text-white hover:text-primary pb-1 border-b-2 border-transparent hover:border-primary">Recipes</a>
               <a href="blog.html" data-page="blog.html" class="nav-link text-white hover:text-primary pb-1 border-b-2 border-transparent hover:border-primary">Blogs</a>
-              <a href="contactUs.html" data-page="contactUs.html" class="nav-link text-white hover:text-primary pb-1 border-b-2 border-transparent hover:border-primary">Contact Us</a>
+              <a href="career.html" data-page="career.html" class="nav-link text-white hover:text-primary pb-1 border-b-2 border-transparent hover:border-primary">Careers </a>
             </nav>
 
             <!-- CTA BUTTON & MOBILE TOGGLE -->
             <div class="flex items-center gap-4">
-              <a href="contactUs.html" id="contactBtn" class="hidden lg:inline-flex bg-primary hover:bg-primary-dark text-white px-7 py-3 rounded-full font-semibold transition-all">
-                Contact Us
+              <a href="contactUs.html" id="contactBtn" class="hidden lg:inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-7 py-3 rounded-full font-semibold transition-all">
+                Contact Us <i class="ri-arrow-right-up-line text-lg"></i>
               </a>
               
               <!-- Mobile Hamburger Menu Button -->
@@ -119,7 +132,21 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
             </div>
 
-            <a href="aboutUs.html" data-page="aboutUs.html" class="mobile-link hover:text-primary py-2 border-b border-gray-50">About Us</a>
+            <!-- Mobile About Us Toggle -->
+            <div>
+              <button type="button" class="mobile-dropdown-btn w-full text-left flex justify-between items-center py-2 border-b border-gray-50 hover:text-primary">
+                About Us
+                <i class="ri-arrow-down-s-line transition-transform duration-300"></i>
+              </button>
+              <div class="mobile-dropdown-content hidden pl-4 mt-2 space-y-3 text-base font-medium text-gray-600 border-l border-red-100 ml-1">
+                <a href="companyOverview.html" class="block py-1 hover:text-primary">Company Overview</a>
+                <a href="aboutUs.html" class="block py-1 hover:text-primary">Leadership</a>
+                <a href="client.html" class="block py-1 hover:text-primary">Clients</a>
+                <a href="aboutUs.html" class="block py-1 hover:text-primary">CSR</a>
+                <a href="legacy.html" class="block py-1 hover:text-primary">Milestone</a>
+              </div>
+            </div>
+
             <a href="recipes.html" data-page="recipes.html" class="mobile-link hover:text-primary py-2 border-b border-gray-50">Recipes</a>
             <a href="blog.html" data-page="blog.html" class="mobile-link hover:text-primary py-2 border-b border-gray-50">Blogs</a>
             <a href="contactUs.html" data-page="contactUs.html" class="mobile-link hover:text-primary py-2 border-b border-gray-50">Contact Us</a>
@@ -138,226 +165,177 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  const pageHeroes = {
-    "aboutUs.html": {
-      eyebrow: "Company / About Us",
-      title: "A Legacy Of Purity, Trust & Modern Dairy Excellence",
-      subtitle: "Discover the Madhusudan journey: farmer-first sourcing, uncompromising quality, and food products created for modern Indian families.",
-      image: "https://images.unsplash.com/photo-1628088062854-d1870b4553da?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Since 1991", "ISO Led Quality", "Farmer Focused"]
-    },
-    "dairyproduct.html": {
-      eyebrow: "Products / Dairy & Frozen",
-      title: "Premium Everyday Products Crafted With Care",
-      subtitle: "Explore fresh dairy and frozen essentials designed for consistent taste, purity, and professional-grade reliability.",
-      image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Fresh Dairy", "Frozen Range", "Quality Checked"]
-    },
-    "productDetails.html": {
-      eyebrow: "Product Detail",
-      title: "Authentic Dairy Richness For Elevated Cooking",
-      subtitle: "A closer look at premium Madhusudan products, their purity, usage, nutrition, and culinary versatility.",
-      image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Pure Taste", "Rich Aroma", "Trusted Source"]
-    },
-    "recipes.html": {
-      eyebrow: "Kitchen / Recipes",
-      title: "Inspired Recipes For Beautiful Everyday Meals",
-      subtitle: "Bring Madhusudan goodness into your kitchen with refined recipes, simple methods, and memorable flavours.",
-      image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Family Favourites", "Dairy Rich", "Easy Cooking"]
-    },
-    "recipesDetails.html": {
-      eyebrow: "Recipe Detail",
-      title: "A Signature Dish, Finished With Premium Dairy",
-      subtitle: "Step-by-step inspiration for creating a polished, flavourful dish using trusted Madhusudan ingredients.",
-      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Chef Notes", "Simple Steps", "Rich Finish"]
-    },
-    "blog.html": {
-      eyebrow: "Insights / Blogs",
-      title: "Stories From Dairy, Food Innovation & Modern Living",
-      subtitle: "Read perspectives on nutrition, farming, quality, and the evolving world of premium food products.",
-      image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Nutrition", "Innovation", "Brand Stories"]
-    },
-    "contactUs.html": {
-      eyebrow: "Contact / Support",
-      title: "Start A Conversation With Madhusudan",
-      subtitle: "Connect with our team for business enquiries, distribution, product support, partnerships, and customer care.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Business Enquiries", "Support", "Partnerships"]
-    },
-    "career.html": {
-      eyebrow: "Careers / Join Us",
-      title: "Build A Meaningful Career In Food Excellence",
-      subtitle: "Join teams shaping quality, operations, innovation, and distribution for one of India's trusted food brands.",
-      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Growth", "Purpose", "Team Culture"]
-    },
-    "client.html": {
-      eyebrow: "Partners / Clients",
-      title: "Trusted By Businesses, Retailers & Institutions",
-      subtitle: "A premium partner network built on reliability, supply strength, food safety, and long-term trust.",
-      image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Retail", "Distribution", "Institutional"]
-    },
-    "infrastructure.html": {
-      eyebrow: "Infrastructure",
-      title: "Modern Facilities Built For Scale, Freshness & Safety",
-      subtitle: "Explore the processing, logistics, cold-chain, and quality systems behind every Madhusudan product.",
-      image: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Processing", "Cold Chain", "Quality Labs"]
-    },
-    "legacy.html": {
-      eyebrow: "Legacy",
-      title: "Decades Of Trust, Carried Forward With Vision",
-      subtitle: "From humble beginnings to a modern food enterprise, our legacy is built on consistency and care.",
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Heritage", "Integrity", "Progress"]
-    },
-    "media.html": {
-      eyebrow: "Media / Events",
-      title: "Moments, Milestones & Brand Stories In Focus",
-      subtitle: "Explore launches, events, media highlights, and the visual world of Madhusudan.",
-      image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Events", "Gallery", "Announcements"]
-    },
-    "privacyPolicy.html": {
-      eyebrow: "Privacy Policy",
-      title: "Clear, Responsible & Transparent Data Practices",
-      subtitle: "Understand how Madhusudan handles information with care, responsibility, and respect for your privacy.",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Transparency", "Security", "Trust"]
-    },
-    "demo.html": {
-      eyebrow: "Preview",
-      title: "Premium Madhusudan Digital Experience",
-      subtitle: "A refined preview page aligned with the brand's visual language and modern interface direction.",
-      image: "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1800&auto=format&fit=crop",
-      chips: ["Premium UI", "Responsive", "Brand Led"]
-    }
+  // Hero sections are now hardcoded in HTML files
+  if (currentPath === "index.html") {
+    document.body.classList.add("home-page");
+  } else {
+    document.body.classList.add("inner-page");
+  }
+
+  // 1b. ALL-PAGES PREMIUM DESIGN ENHANCEMENTS
+  const enhancePageDesign = () => {
+    document.querySelectorAll(".bg-yellow-400.rounded-full, .w-5.h-5.rounded-full.bg-yellow-400").forEach((dot) => {
+      const bullet = document.createElement("span");
+      bullet.className = "premium-bullet";
+      bullet.innerHTML = '<i class="ri-check-line"></i>';
+      dot.replaceWith(bullet);
+    });
+
+    document.querySelectorAll("button.bg-black, a.bg-black").forEach((btn) => {
+      if (btn.closest("header, footer, #navbar")) return;
+      btn.classList.add("premium-button");
+      btn.classList.remove("hover:bg-yellow-400", "hover:text-black");
+    });
+
+    document.querySelectorAll("body.inner-page > section, body.inner-page .page-main > section").forEach((section) => {
+      if (!section.classList.contains("premium-section")) {
+        section.classList.add("premium-section");
+      }
+    });
+
+    document.querySelectorAll("section").forEach((section) => {
+      section.querySelectorAll("p.uppercase, span.uppercase").forEach((el) => {
+        if (el.closest("header, footer, .nav-dropdown-panel, #mobileMenu")) return;
+        const cn = el.className;
+        if (cn.includes("tracking") || cn.includes("text-yellow") || cn.includes("E14F58") || cn.includes("E21E23")) {
+          el.classList.add("section-tag");
+        }
+      });
+
+      section.querySelectorAll(".text-yellow-500").forEach((el) => {
+        if (!el.closest("header, footer")) el.classList.add("section-tag");
+      });
+    });
+
+    document.querySelectorAll("body.inner-page h2").forEach((h2) => {
+      if (h2.closest("header, footer, article .p-10")) return;
+      const cn = h2.className;
+      if (/text-(4xl|5xl|6xl|7xl)/.test(cn) || h2.closest(".text-center")) {
+        h2.classList.add("section-title");
+      }
+    });
+
+    document.querySelectorAll(
+      'a[class*="rounded-full"], button[class*="rounded-full"], button[class*="rounded-2xl"], a[class*="bg-[#E14F58]"], button[class*="bg-[#E14F58]"]'
+    ).forEach((btn) => {
+      if (btn.closest("header, footer, #navbar, #contactBtn, .blog-pagination")) return;
+      const cn = btn.className;
+      if (cn.includes("border") && !cn.match(/bg-\[#E|bg-primary|bg-black/)) return;
+      if (cn.match(/bg-\[#E|bg-primary|bg-black/) || (cn.includes("rounded-full") && cn.includes("font-semibold") && cn.includes("text-white"))) {
+        btn.classList.add("premium-button");
+      }
+    });
+
+    document.querySelectorAll("section .group, section article, .policy-card, .recipe-card").forEach((card) => {
+      if (!card.classList.contains("premium-ui-card") && card.closest("section")) {
+        card.classList.add("premium-ui-card");
+      }
+    });
+
+    document.querySelectorAll(
+      ".client-card, .media-card, .infrastructure-card, .recipe-card, .policy-card, .partner-card, .leader-card, .step-card, .custom-card, .glass-card"
+    ).forEach((card) => {
+      card.classList.add("premium-ui-card");
+      if (card.classList.contains("glass-card")) card.classList.add("glass-premium");
+    });
+
+
+    document.querySelectorAll("section .swiper").forEach((s) => s.classList.add("premium-swiper"));
+
+    document.querySelectorAll("section .grid").forEach((grid) => {
+      grid.querySelectorAll(":scope > div").forEach((cell) => {
+        if (cell.classList.contains("premium-ui-card")) return;
+        if (cell.querySelector("img") && (cell.className.includes("rounded") || cell.className.includes("shadow"))) {
+          cell.classList.add("premium-ui-card");
+        }
+      });
+    });
+
+    document.querySelectorAll(".gradient-text").forEach((el) => el.classList.add("premium-gradient-text"));
+    document.querySelectorAll("section .heading-font, section .heading").forEach((el) => {
+      el.classList.add("heading-font");
+    });
+
+    document.querySelectorAll("#featured .group, #featured article, .blog-card").forEach((card) => {
+      card.classList.add("premium-ui-card");
+    });
+
+    document.querySelectorAll("table").forEach((t) => t.closest("div")?.classList.add("premium-ui-card"));
+
+    document.querySelectorAll("section ul li").forEach((li) => {
+      const parent = li.parentElement;
+      if (parent && parent.children.length > 2 && li.querySelector("i")) {
+        li.classList.add("flex", "items-start", "gap-3");
+      }
+    });
   };
 
-  const hero = pageHeroes[currentPath];
-  if (hero && !document.querySelector(".page-hero")) {
-    document.body.classList.add("inner-page");
-    const heroSection = document.createElement("section");
-    heroSection.className = "page-hero";
-    heroSection.style.setProperty("--hero-image", `url('${hero.image}')`);
-    heroSection.innerHTML = `
-      <div class="page-hero__content">
-        <div data-reveal>
-          <span class="page-hero__eyebrow">${hero.eyebrow}</span>
-          <h1 class="page-hero__title">${hero.title}</h1>
-          <p class="page-hero__subtitle">${hero.subtitle}</p>
-        </div>
-      </div>
-    `;
-    if (globalHeader) {
-      globalHeader.insertAdjacentElement("afterend", heroSection);
-    } else {
-      document.body.prepend(heroSection);
-    }
-
-    const pagesWithLegacyTopHeroes = new Set([
-      "aboutUs.html",
-      "blog.html",
-      "career.html",
-      "client.html",
-      "contactUs.html",
-      "infrastructure.html",
-      "legacy.html",
-      "media.html",
-      "privacyPolicy.html",
-      "productDetails.html",
-      "recipes.html",
-      "recipesDetails.html"
-    ]);
-
-    const legacyTopHero = heroSection.nextElementSibling;
-    if (pagesWithLegacyTopHeroes.has(currentPath) && legacyTopHero && legacyTopHero.tagName === "SECTION") {
-      legacyTopHero.classList.add("legacy-top-hero-hidden");
-    }
-  } else if (currentPath === "index.html") {
-    document.body.classList.add("home-page");
-  }
+  enhancePageDesign();
 
   // 2. INJECT THE FOOTER
   const globalFooter = document.getElementById("global-footer");
   if (globalFooter) {
     globalFooter.innerHTML = `
-      <footer class="bg-primary-color text-white pt-24 pb-12">
-        <div class="max-w-7xl mx-auto px-6 lg:px-10">
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-16 border-b border-white/10 pb-20">
-            <!-- Col 1: About SMC -->
-            <div class="space-y-6">
+      <footer class="premium-footer bg-primary-color text-white pt-24 pb-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-14 lg:gap-16 border-b border-white/10 pb-16">
+            <div class="space-y-6 lg:col-span-1">
               <a href="index.html">
-                <img src="./images/logo.png" alt="Madhusudan" class="w-36 bg-white/10 p-2 rounded-xl" />
+                <img src="./images/logo.png" alt="Madhusudan" class="w-36 bg-white/10 p-3 rounded-2xl border border-white/10" />
               </a>
-              <p class="text-white/70 leading-8 text-base">
-                Delivering premium quality, authentic dairy and food products with trust and innovation since decades.
+              <p class="text-white/65 leading-relaxed text-[0.95rem] max-w-xs">
+                Premium dairy and food products — purity, trust, and innovation for modern Indian families.
               </p>
             </div>
 
-            <!-- Col 2: Company -->
             <div>
-              <h4 class="text-2xl font-serif font-bold mb-8 relative pb-2 border-b border-white/10">
-                Company
-              </h4>
-              <ul class="space-y-4 text-white/60 text-base font-medium">
-                <li><a href="aboutUs.html" class="hover:text-white hover:pl-2 transition-all duration-300">About Us</a></li>
-                <li><a href="legacy.html" class="hover:text-white hover:pl-2 transition-all duration-300">Our Legacy</a></li>
-                <li><a href="infrastructure.html" class="hover:text-white hover:pl-2 transition-all duration-300">Infrastructure</a></li>
-                <li><a href="media.html" class="hover:text-white hover:pl-2 transition-all duration-300">Media & Events</a></li>
+              <h4 class="text-xl font-bold mb-6 pb-3">Company</h4>
+              <ul class="space-y-3.5 text-white/55 text-[0.95rem] font-medium">
+                <li><a href="aboutUs.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">About Us</a></li>
+                <li><a href="legacy.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Legacy</a></li>
+                <li><a href="infrastructure.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Infrastructure</a></li>
+                <li><a href="media.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Media & Events</a></li>
               </ul>
             </div>
 
-            <!-- Col 3: Resources -->
             <div>
-              <h4 class="text-2xl font-serif font-bold mb-8 relative pb-2 border-b border-white/10">
-                Resources
-              </h4>
-              <ul class="space-y-4 text-white/60 text-base font-medium">
-                <li><a href="career.html" class="hover:text-white hover:pl-2 transition-all duration-300">Careers</a></li>
-                <li><a href="client.html" class="hover:text-white hover:pl-2 transition-all duration-300">Our Clients</a></li>
-                <li><a href="recipes.html" class="hover:text-white hover:pl-2 transition-all duration-300">Recipes Collection</a></li>
-                <li><a href="privacyPolicy.html" class="hover:text-white hover:pl-2 transition-all duration-300">Privacy Policy</a></li>
+              <h4 class="text-xl font-bold mb-6 pb-3">Resources</h4>
+              <ul class="space-y-3.5 text-white/55 text-[0.95rem] font-medium">
+                <li><a href="career.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Careers</a></li>
+                <li><a href="client.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Clients</a></li>
+                <li><a href="recipes.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Recipes</a></li>
+                <li><a href="privacyPolicy.html" class="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Privacy Policy</a></li>
               </ul>
             </div>
 
-            <!-- Col 4: Contact -->
             <div>
-              <h4 class="text-2xl font-serif font-bold mb-8 relative pb-2 border-b border-white/10">
-                Contact
-              </h4>
-              <ul class="space-y-4 text-white/60 text-base font-medium">
+              <h4 class="text-xl font-bold mb-6 pb-3">Contact</h4>
+              <ul class="space-y-4 text-white/55 text-[0.95rem] font-medium">
                 <li class="flex items-center gap-3">
-                  <i class="ri-mail-line text-xl text-white"></i>
+                  <span class="footer-social-pill !w-10 !h-10 text-base"><i class="ri-mail-send-line"></i></span>
                   <a href="mailto:info@madhusudan.com" class="hover:text-white transition">info@madhusudan.com</a>
                 </li>
                 <li class="flex items-center gap-3">
-                  <i class="ri-phone-line text-xl text-white"></i>
+                  <span class="footer-social-pill !w-10 !h-10 text-base"><i class="ri-phone-line"></i></span>
                   <a href="tel:+919876543210" class="hover:text-white transition">+91 9876543210</a>
                 </li>
                 <li class="flex items-start gap-3">
-                  <i class="ri-map-pin-line text-xl text-white mt-1"></i>
+                  <span class="footer-social-pill !w-10 !h-10 text-base shrink-0"><i class="ri-map-pin-2-line"></i></span>
                   <span>New Delhi, India</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <!-- Bottom Footer -->
-          <div class="flex flex-col md:flex-row justify-between items-center pt-10 gap-5">
-            <p class="text-white/50 text-sm font-medium">
+          <div class="flex flex-col md:flex-row justify-between items-center pt-10 gap-6">
+            <p class="text-white/45 text-sm font-medium tracking-wide">
               © 2026 Madhusudan Group. All rights reserved.
             </p>
-            <div class="flex items-center gap-5 text-2xl">
-              <a href="#" class="hover:text-primary transition hover:scale-110"><i class="ri-facebook-circle-line"></i></a>
-              <a href="#" class="hover:text-primary transition hover:scale-110"><i class="ri-instagram-line"></i></a>
-              <a href="#" class="hover:text-primary transition hover:scale-110"><i class="ri-linkedin-box-line"></i></a>
-              <a href="#" class="hover:text-primary transition hover:scale-110"><i class="ri-youtube-line"></i></a>
+            <div class="flex items-center gap-3">
+              <a href="#" aria-label="Facebook" class="footer-social-pill"><i class="ri-facebook-circle-line text-xl"></i></a>
+              <a href="#" aria-label="Instagram" class="footer-social-pill"><i class="ri-instagram-line text-xl"></i></a>
+              <a href="#" aria-label="LinkedIn" class="footer-social-pill"><i class="ri-linkedin-box-line text-xl"></i></a>
+              <a href="#" aria-label="YouTube" class="footer-social-pill"><i class="ri-youtube-line text-xl"></i></a>
             </div>
           </div>
         </div>
@@ -503,7 +481,7 @@ document.addEventListener("DOMContentLoaded", () => {
     card.classList.add("premium-ui-card");
   });
 
-  document.querySelectorAll("section form, #location .overflow-hidden").forEach((item) => {
+  document.querySelectorAll("section  #location .overflow-hidden").forEach((item) => {
     item.classList.add("premium-ui-card");
   });
 
@@ -571,12 +549,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.querySelectorAll("section:not(.page-hero) .bg-white.border, section:not(.page-hero) article, section:not(.page-hero) form").forEach((card) => {
+  document.querySelectorAll("section .bg-white.border:not(.no-premium), section article:not(.no-premium), section form:not(#contactForm):not(.no-premium)").forEach((card) => {
+    if (card.querySelector('#contactForm')) return;
     card.classList.add("premium-ui-card");
   });
 
   // 7. PREMIUM PAGE MOTION
-  document.querySelectorAll("body:not(.home-page) section:not(.page-hero) > div, .premium-card, .custom-card, article, form").forEach((el, index) => {
+  document.querySelectorAll("body:not(.home-page) section > div:not(.no-premium), .premium-card, .custom-card, article:not(.no-premium), form:not(#contactForm):not(.no-premium)").forEach((el, index) => {
     if (!el.hasAttribute("data-reveal")) {
       el.setAttribute("data-reveal", "");
       el.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
@@ -599,12 +578,23 @@ document.addEventListener("DOMContentLoaded", () => {
     revealItems.forEach(item => item.classList.add("is-visible"));
   }
 
+
+
   if (window.AOS) {
     AOS.init({
       duration: 850,
       easing: "ease-out-cubic",
       once: true,
       offset: 80
+    });
+  }
+
+  if (window.Swiper && document.querySelector(".milkSwiper")) {
+    new Swiper(".milkSwiper", {
+      loop: true,
+      speed: 900,
+      autoplay: { delay: 4000, disableOnInteraction: false },
+      pagination: { el: ".milkSwiper .swiper-pagination", clickable: true }
     });
   }
 
