@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <!-- LOGO -->
             <div class="flex items-center gap-3">
               <a href="index.html">
-                <img src="./images/logo.png" alt="Madhusudan Logo" class="w-32" id="logoText" />
+                <img src="./assets/images/logo.png" alt="Madhusudan Logo" class="w-32" id="logoText" />
               </a>
             </div>
 
@@ -87,10 +87,10 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
 
         <!-- MOBILE MENU OVERLAY DRAWER -->
-        <div id="mobileMenu" class="fixed inset-y-0 right-0 w-80 bg-white/95 backdrop-blur-2xl border-l border-gray-100 shadow-sm z-50 transform translate-x-full transition-transform duration-500 ease-out py-8 px-6 overflow-y-auto lg:hidden">
+        <div id="mobileMenu" class="fixed inset-y-0 right-0 w-80 bg-white/95 backdrop-blur-2xl border-l border-gray-100 z-50 transform translate-x-full transition-transform duration-500 ease-out py-8 px-6 overflow-y-auto lg:hidden">
           <!-- Close Button -->
           <div class="flex items-center justify-between border-b border-gray-100 pb-5 mb-6">
-            <img src="./images/logo.png" alt="Logo" class="w-28" />
+            <img src="./assets/images/logo.png" alt="Logo" class="w-28" />
             <button id="menuClose" class="text-gray-800 text-3xl hover:text-primary focus:outline-none">
               <i class="ri-close-line"></i>
             </button>
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </nav>
 
           <div class="mt-10">
-            <a href="contactUs.html" class="block text-center bg-primary hover:bg-primary-dark text-white py-4 rounded-xl font-bold shadow-lg transition-colors">
+            <a href="contactUs.html" class="block text-center bg-primary hover:bg-primary-dark text-white py-4 rounded-xl font-bold transition-colors">
               Get In Touch
             </a>
           </div>
@@ -283,7 +283,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-14 lg:gap-16 border-b border-white/10 pb-16">
             <div class="space-y-6 lg:col-span-1">
               <a href="index.html">
-                <img src="./images/logo.png" alt="Madhusudan" class="w-36 bg-white/10 p-3 rounded-2xl border border-white/10" />
+                <img src="./assets/images/logo.png" alt="Madhusudan" class="w-36 bg-white/10 p-3 rounded-2xl border border-white/10" />
               </a>
               <p class="text-white/65 leading-relaxed text-[0.95rem] max-w-xs">
                 Premium dairy and food products — purity, trust, and innovation for modern Indian families.
@@ -363,7 +363,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (navbar) {
       if (window.scrollY > 80) {
         navbar.classList.remove("bg-white/10", "border-white/20");
-        navbar.classList.add("bg-white", "border-gray-200", "shadow-[0_15px_40px_rgba(0,0,0,0.08)]", "py-4");
+        navbar.classList.add("bg-white", "border-gray-200", "py-4");
         navbar.classList.remove("py-5");
         if (menuToggle) {
           menuToggle.classList.remove("text-white");
@@ -374,7 +374,7 @@ document.addEventListener("DOMContentLoaded", () => {
           link.classList.add("text-gray-800");
         });
       } else {
-        navbar.classList.remove("bg-white", "border-gray-200", "shadow-[0_15px_40px_rgba(0,0,0,0.08)]", "py-4");
+        navbar.classList.remove("bg-white", "border-gray-200", "py-4");
         navbar.classList.add("bg-white/10", "border-white/20", "py-5");
         if (menuToggle) {
           menuToggle.classList.remove("text-gray-800");
@@ -690,3 +690,4 @@ document.addEventListener("DOMContentLoaded", () => {
     renderBlogPage();
   }
 });
+
