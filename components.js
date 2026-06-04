@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <!-- LOGO -->
             <div class="flex items-center gap-3">
               <a href="index.html">
-                <img src="./assets/images/logo.png" alt="Madhusudan Logo" class="w-32" id="logoText" />
+                <img src="./assets/images/logo.png" alt="Madhusudan Logo" class="w-32" id="logoText"  loading=lazy />
               </a>
             </div>
 
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div id="mobileMenu" class="fixed inset-y-0 right-0 w-80 bg-white/95 backdrop-blur-2xl border-l border-gray-100 z-50 transform translate-x-full transition-transform duration-500 ease-out py-8 px-6 overflow-y-auto lg:hidden">
           <!-- Close Button -->
           <div class="flex items-center justify-between border-b border-gray-100 pb-5 mb-6">
-            <img src="./assets/images/logo.png" alt="Logo" class="w-28" />
+            <img src="./assets/images/logo.png" alt="Logo" class="w-28"  loading=lazy />
             <button id="menuClose" class="text-gray-800 text-3xl hover:text-primary focus:outline-none">
               <i class="ri-close-line"></i>
             </button>
@@ -283,7 +283,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-14 lg:gap-16 border-b border-white/10 pb-16">
             <div class="space-y-6 lg:col-span-1">
               <a href="index.html">
-                <img src="./assets/images/logo.png" alt="Madhusudan" class="w-36 bg-white/10 p-3 rounded-2xl border border-white/10" />
+                <img src="./assets/images/logo.png" alt="Madhusudan" class="w-36 bg-white/10 p-3 rounded-2xl border border-white/10"  loading=lazy />
               </a>
               <p class="text-white/65 leading-relaxed text-[0.95rem] max-w-xs">
                 Premium dairy and food products — purity, trust, and innovation for modern Indian families.
